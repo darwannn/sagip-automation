@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231124 04:44:24.092" rpa="false" schemaversion="4">
+<suite id="s1" name="001 TS013" source="c:\Users\Darwin\Desktop\SAGIP Automation Testing\test_suite\Hazard Report Management Module\001_TS013.robot">
+<test id="s1-t1" name="Verify Hazard Report" line="7">
+<kw name="Dispatcher Login" library="login">
+<kw name="Open Browser and Maximize" library="login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231124 04:44:24.403" level="INFO">Opening browser 'Chrome' to base url 'https://sagip-automation.vercel.app/'.</msg>
+<status status="PASS" starttime="20231124 04:44:24.402" endtime="20231124 04:44:29.882"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231124 04:44:29.884" endtime="20231124 04:44:30.432"/>
+</kw>
+<status status="PASS" starttime="20231124 04:44:24.401" endtime="20231124 04:44:30.433"/>
+</kw>
+<kw name="Login" library="login">
+<arg>dispatcher@sagip.live</arg>
+<arg>Sagip.00</arg>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231124 04:44:30.435" level="INFO">Opening url 'https://sagip-automation.vercel.app/'</msg>
+<status status="PASS" starttime="20231124 04:44:30.434" endtime="20231124 04:44:31.234"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
+<arg>10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231124 04:44:31.235" endtime="20231124 04:44:31.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.417" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.416" endtime="20231124 04:44:31.514"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=identifier</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.515" level="INFO">Clicking element 'id=identifier'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.514" endtime="20231124 04:44:31.601"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:identifier</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.603" level="INFO">Typing text 'dispatcher@sagip.live' into text field 'id:identifier'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.601" endtime="20231124 04:44:31.760"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=password</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.761" level="INFO">Clicking element 'id=password'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.761" endtime="20231124 04:44:31.827"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.829" level="INFO">Typing text 'Sagip.00' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.827" endtime="20231124 04:44:31.942"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:31.943" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[1]/button'.</msg>
+<status status="PASS" starttime="20231124 04:44:31.942" endtime="20231124 04:44:32.011"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
+<arg>60 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231124 04:44:32.011" endtime="20231124 04:44:33.458"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231124 04:44:33.484" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1' is displayed.</msg>
+<status status="PASS" starttime="20231124 04:44:33.458" endtime="20231124 04:44:33.485"/>
+</kw>
+<status status="PASS" starttime="20231124 04:44:30.433" endtime="20231124 04:44:33.485"/>
+</kw>
+<status status="PASS" starttime="20231124 04:44:24.401" endtime="20231124 04:44:33.485"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://sagip-automation.vercel.app/admin/hazard-reports</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231124 04:44:33.487" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/hazard-reports'</msg>
+<status status="PASS" starttime="20231124 04:44:33.486" endtime="20231124 04:44:34.228"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=.bg-white:nth-child(1) .mt-2 &gt; .font-medium</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231124 04:44:34.230" level="INFO">Clicking element 'css=.bg-white:nth-child(1) .mt-2 &gt; .font-medium'.</msg>
+<msg timestamp="20231124 04:44:34.509" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231124 04:44:34.509" level="FAIL">Element with locator 'css=.bg-white:nth-child(1) .mt-2 &gt; .font-medium' not found.</msg>
+<status status="FAIL" starttime="20231124 04:44:34.229" endtime="20231124 04:44:34.527"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=.btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.528" endtime="20231124 04:44:34.548"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>css=.btn-primary &gt; svg</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.549" endtime="20231124 04:44:34.550"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${element}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.553" endtime="20231124 04:44:34.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=.btn-primary</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.560" endtime="20231124 04:44:34.561"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.562" endtime="20231124 04:44:34.563"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${title}</arg>
+<arg>SAGIP - Safety Assistance with Geotracking Integration Program</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.564" endtime="20231124 04:44:34.564"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css=.Toastify__toast-body &gt; div:nth-child(2)</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231124 04:44:34.567" endtime="20231124 04:44:34.567"/>
+</kw>
+<status status="FAIL" starttime="20231124 04:44:24.400" endtime="20231124 04:44:34.568">Element with locator 'css=.bg-white:nth-child(1) .mt-2 &gt; .font-medium' not found.</status>
+</test>
+<status status="FAIL" starttime="20231124 04:44:24.102" endtime="20231124 04:44:34.574"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="001 TS013">001 TS013</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
