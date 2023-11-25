@@ -26,29 +26,29 @@ Reject Assistance Request
     
     Click Element   xpath=//button[contains(text(), 'Reject Request')]
 
-Input Rejection Reason
+Input Reject Reason
     Reject Assistance Request
     Wait Until Page Contains Element    xpath=//form/div/div/div/div/div[2]
     Click Element   xpath=//form/div/div/div/div/div[2]
     Click Element   id=react-select-2-option-0
-
+    Wait Until Element Is Enabled    xpath=//div[@id='radix-:r0:']/form/div[3]/button
 
 *** Test Cases ***
 1_TS012_TC001
     Click Assistance Request
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
-    Close Browser
+    # Close Browser
 
 1_TS012_TC002
     Reject Assistance Request
     Element Should Be Visible   id=radix-:r0:
 
 1_TS012_TC003
-    Input Rejection Reason
+    Input Reject Reason
     Input Text  id=additionalNote   The department identified the report as false alarm.
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
-    Close Browser
+    # Close Browser
 
 1_TS012_TC004
     Reject Assistance Request
@@ -57,7 +57,7 @@ Input Rejection Reason
     # Should Be True    ${button_disabled}
      ${error_text}=    Get Text    css=.text-red-500
     Should Not Be Equal As Strings    ${error_text}    This field is required
-    Close Browser
+    # Close Browser
 
 1_TS012_TC005
     Reject Assistance Request
@@ -65,25 +65,27 @@ Input Rejection Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Wait Until Page Contains Element    css=.text-red-500
     Element Should Be Visible   css=.text-red-500
-    Close Browser
+    # Close Browser
 
 1_TS012_TC006
-    Input Rejection Reason
+    Input Reject Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
-    Close Browser    
+    # Close Browser    
 
 1_TS012_TC007
-    Input Rejection Reason
+    Input Reject Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present    
-    Close Browser
+    Wait Until Element Is Visible   css=.Toastify__toast--success
+    Element Should Be Visible    css=.Toastify__toast--success
+    # Close Browser
 
 1_TS012_TC008
-    Input Rejection Reason 
+    Input Reject Reason 
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
-    Close Browser
+    # Close Browser
  
   
 
