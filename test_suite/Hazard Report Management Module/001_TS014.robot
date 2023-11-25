@@ -3,11 +3,7 @@ Library    SeleniumLibrary
 Resource    ../../suite_setup/login.robot
 Resource    ../../suite_teardown/logout.robot
 
-
-
-
 *** Keyword ***
-
 Click Hazard Report
     Dispatcher Login
     Go To    https://sagip-automation.vercel.app/admin/hazard-reports
@@ -29,7 +25,7 @@ Hazard Present
     Close Browser
     
 1_TS014_TC002
-    Dispatcher Login
+  
     Click Hazard Report
     Click Element     xpath=//button[contains(text(), 'Mark as Resolved')]
     Wait Until Element Is Visible   css=.Toastify__toast--success

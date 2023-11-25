@@ -29,7 +29,7 @@ Assistance Present
     Close Browser
 
 1_TS010_TC002
-    Dispatcher Login
+  
     Click Assistance Request
     Click Element     xpath=//a[contains(text(), 'Incident Details')]
     Wait Until Element Is Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]
@@ -37,7 +37,7 @@ Assistance Present
     Close Browser
 
 1_TS010_TC003
-    Dispatcher Login
+ 
     Click Assistance Request
     Click Element     xpath=//a[contains(text(), 'Incident Details')]
     Wait Until Element Is Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]

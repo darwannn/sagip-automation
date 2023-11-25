@@ -26,7 +26,7 @@ Hazard Present
     Close Browser
     
 1_TS013_TC002
-    Dispatcher Login
+  
     Click Hazard Report
     Click Element     xpath=//button[contains(text(), 'Mark as Verified')]
     Wait Until Element Is Visible   css=.Toastify__toast--success

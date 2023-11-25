@@ -37,22 +37,15 @@ Dispatcher Login
     Login    dispatcher@sagip.live    Sagip.00
 
 
-# Login
-#     [Arguments]    ${username}    ${password}
-#     Go To   ${URL}
-    
-#     ${element_visible}=    Run Keyword And Return Status    Element Should Be Visible    xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1
-#     Run Keyword Unless    ${element_visible}    Login Required   ${username}    ${password}
-# Login Required
-#     [Arguments]    ${username}    ${password}
-#     Wait Until Element Is Visible    xpath=//*[@id="root"]/div[1]/div[3]/button[1]    10 seconds
-#     Click Element   xpath=//*[@id="root"]/div[1]/div[3]/button[1]
-#     Click Element   id=identifier
-#     Input Text      id:identifier    ${username}
-#     Click Element   id=password
-#     Input Text      id:password    ${password}
-#     Click Element   xpath=//*[@id="root"]/div[1]/div[1]/button
-#     Wait Until Element Is Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1    60 seconds
-#     Element Should Be Visible    xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1
+Given that an admin is logged in
+    Open Browser and Maximize
+    Login    admin@sagip.live    Sagip.00
 
+Give that an employee is logged in
+    Open Browser and Maximize
+    Login    employee@sagip.live    Sagip.00
+
+Given that a dispatcher is logged in
+    Open Browser and Maximize
+    Login    dispatcher@sagip.live    Sagip.00
 
