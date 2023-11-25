@@ -26,14 +26,16 @@ Assistance Present
 1_TS010_TC001
     Click Assistance Request
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
-    
+    Close Browser
+
 1_TS010_TC002
     Dispatcher Login
     Click Assistance Request
     Click Element     xpath=//a[contains(text(), 'Incident Details')]
     Wait Until Element Is Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]
-   
+    Close Browser
+
 1_TS010_TC003
     Dispatcher Login
     Click Assistance Request
@@ -41,7 +43,7 @@ Assistance Present
     Wait Until Element Is Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]
     Click Element     xpath=//button[contains(text(), 'Print Report')]
     Location Should Contain    /admin/emergency-reports/
-
+    Close Browser
    
 
 

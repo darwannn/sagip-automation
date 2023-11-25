@@ -35,17 +35,19 @@ Input Rejection Reason
 1_TS012_TC001
     Click Hazard Report
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
+    Close Browser
 
 1_TS012_TC002
     Reject Hazard Report
     Element Should Be Visible   id=radix-:r0:
+    Close Browser
 
 1_TS012_TC003
     Input Rejection Reason
     Input Text  id=additionalNote   The department identified the report as false alarm.
     Click Element   xpath=//button[contains(text(), 'Reject Report')]
     Alert Should Be Present     action=LEAVE
-    
+    Close Browser
 
 1_TS012_TC004
     Reject Hazard Report
@@ -54,6 +56,7 @@ Input Rejection Reason
     # Should Be True    ${button_disabled}
      ${error_text}=    Get Text    css=.text-red-500
     Should Not Be Equal As Strings    ${error_text}    This field is required
+    Close Browser
 
 1_TS012_TC005
     Reject Hazard Report
@@ -61,22 +64,25 @@ Input Rejection Reason
     Click Element   xpath=//button[contains(text(), 'Reject Report')]
     Wait Until Page Contains Element    css=.text-red-500
     Element Should Be Visible   css=.text-red-500
+    Close Browser
 
 1_TS012_TC006
     Input Rejection Reason
     Click Element   xpath=//button[contains(text(), 'Reject Report')]
     Alert Should Be Present     action=LEAVE
+    Close Browser
     
-
 1_TS012_TC007
     Input Rejection Reason
     Click Element   xpath=//button[contains(text(), 'Reject Report')]
-    Alert Should Be Present    
+    Alert Should Be Present
+    Close Browser    
 
 1_TS012_TC008
     Input Rejection Reason 
     Click Element   xpath=//button[contains(text(), 'Reject Report')]
     Alert Should Be Present     action=LEAVE
+    Close Browser
  
   
 

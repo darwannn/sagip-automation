@@ -26,13 +26,12 @@ Hazard Present
 1_TS014_TC001
     Click Hazard Report
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
+    Close Browser
     
 1_TS014_TC002
     Dispatcher Login
     Click Hazard Report
     Click Element     xpath=//button[contains(text(), 'Mark as Resolved')]
-    # Wait Until Element Is Visible   css=.Toastify__toast-body
-    # Element Should Be Visible    css=.Toastify__toast-body
     Wait Until Element Is Visible   css=.Toastify__toast--success
     Element Should Be Visible    css=.Toastify__toast--success
-    # Logout
+    Close Browser

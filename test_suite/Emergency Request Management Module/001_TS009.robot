@@ -31,24 +31,25 @@ Accept Assistance Request
 1_TS009_TC001
     Click Assistance Request
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
+    Close Browser
 
 1_TS009_TC002
     Accept Assistance Request
-
     Element Should Be Visible     xpath=//button[contains(text(), 'Send Responders')]
+    Close Browser
 
 1_TS009_TC003
     Accept Assistance Request
- 
-
     Click Element     xpath=//button[contains(text(), 'Send Responders')]
     Element Should Be Visible   xpath=//span[contains(text(), 'Select an Available Responder')]
+    Close Browser
 
 1_TS009_TC004
     Accept Assistance Request
     Click Element   css=.css-8mmkcg > path
     Click Element   id=react-select-2-option-1
     Element Should Not Be Visible   id=react-select-2-input-listbox 
+    Close Browser
 
 1_TS009_TC005
     Accept Assistance Request
@@ -57,7 +58,7 @@ Accept Assistance Request
     Click Element     xpath=//button[contains(text(), 'Send Responders')]
     Wait Until Element Is Visible   css=.Toastify__toast--success
     Element Should Be Visible    css=.Toastify__toast--success
-
+    Close Browser
  
   
 

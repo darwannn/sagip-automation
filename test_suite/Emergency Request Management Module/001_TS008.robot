@@ -37,6 +37,7 @@ Input Rejection Reason
 1_TS012_TC001
     Click Assistance Request
     Element Should Be Visible   xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p
+    Close Browser
 
 1_TS012_TC002
     Reject Assistance Request
@@ -47,7 +48,7 @@ Input Rejection Reason
     Input Text  id=additionalNote   The department identified the report as false alarm.
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
-    
+    Close Browser
 
 1_TS012_TC004
     Reject Assistance Request
@@ -56,6 +57,7 @@ Input Rejection Reason
     # Should Be True    ${button_disabled}
      ${error_text}=    Get Text    css=.text-red-500
     Should Not Be Equal As Strings    ${error_text}    This field is required
+    Close Browser
 
 1_TS012_TC005
     Reject Assistance Request
@@ -63,22 +65,25 @@ Input Rejection Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Wait Until Page Contains Element    css=.text-red-500
     Element Should Be Visible   css=.text-red-500
+    Close Browser
 
 1_TS012_TC006
     Input Rejection Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
-    
+    Close Browser    
 
 1_TS012_TC007
     Input Rejection Reason
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present    
+    Close Browser
 
 1_TS012_TC008
     Input Rejection Reason 
     Click Element   xpath=//div[@id='radix-:r0:']/form/div[3]/button
     Alert Should Be Present     action=LEAVE
+    Close Browser
  
   
 
