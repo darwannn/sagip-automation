@@ -25,28 +25,32 @@ Wellness Check Present
 *** Test Cases ***
 1_TS043_TC001
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-    Handle Alert    action=DISMISS
+   Sleep  3s
+   Wait Until Page Contains Element   css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element     css=.border-b:nth-child(1) .ant-dropdown-trigger
+    Sleep   2s
+   Wait Until Page Contains Element  xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
+   Click Element     xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
+   Alert Should Be Present
    # Close Browser
 
 1_TS043_TC002
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-    Handle Alert    
+   Wait Until Page Contains Element  css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element     css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Sleep  2s
+   Wait Until Page Contains Element  xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
+   Click Element     xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
+   Handle Alert      action=DISMISS
    # Close Browser
 
 1_TS043_TC003
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
+   Wait Until Page Contains Element  css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element    css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Sleep   2s
+   Wait Until Page Contains Element  xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
+   Click Element     xpath=//div[@class='flex items-center gap-2 text-red-500']/span[.='Delete']
     ${alert_text} =    Handle Alert
     Log    Alert Text: ${alert_text}
     Wait Until Element Is Visible   css=.Toastify__toast--success

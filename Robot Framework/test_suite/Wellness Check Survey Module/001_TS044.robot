@@ -29,8 +29,8 @@ Clear Input Field
 *** Test Cases ***
 1_TS044_TC001
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
+   Wait Until Page Contains Element  css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element     css=.border-b:nth-child(1) .ant-dropdown-trigger
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element    xpath=/html/body/div[3]/div/ul/li[3]
    Wait Until Element Is Visible    xpath=//h2[contains(text(), 'Responses')]
@@ -42,8 +42,8 @@ Clear Input Field
 
 1_TS044_TC002
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
+   Wait Until Page Contains Element  css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element     css=.border-b:nth-child(1) .ant-dropdown-trigger
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element    xpath=/html/body/div[3]/div/ul/li[3]
    Wait Until Element Is Visible    xpath=//h2[contains(text(), 'Responses')]
@@ -60,8 +60,8 @@ Clear Input Field
 
 1_TS044_TC003
    Click Wellness Check
-   Wait Until Page Contains Element  xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
-   Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
+   Wait Until Page Contains Element  css=.border-b:nth-child(1) .ant-dropdown-trigger
+   Click Element     css=.border-b:nth-child(1) .ant-dropdown-trigger
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element    xpath=/html/body/div[3]/div/ul/li[3]
    Wait Until Element Is Visible    xpath=//h2[contains(text(), 'Responses')]
