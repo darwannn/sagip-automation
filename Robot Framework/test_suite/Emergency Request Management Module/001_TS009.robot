@@ -11,7 +11,7 @@ Click Assistance Request
     Wait Until Page Contains Element    xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]
 
       ${element}=     Get WebElement    xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]
-    Run Keyword Unless  '${element}'=='None'  Assistance Present
+     Run Keyword If   ${element}      Assistance Present
 
 Assistance Present
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231202 21:11:00.744" rpa="false" schemaversion="4">
-<suite id="s1" name="001 TS009" source="C:\Users\Darwin\Desktop\SAGIP Automation Testing\Robot Framework\test_suite\Emergency Request Management Module\001_TS009.robot">
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231203 00:48:21.500" rpa="false" schemaversion="4">
+<suite id="s1" name="001 TS010" source="C:\Users\Darwin\Desktop\SAGIP Automation Testing\Robot Framework\test_suite\Emergency Request Management Module\001_TS010.robot">
 <kw name="Dispatcher Login" library="login" type="SETUP">
 <kw name="Login" library="login">
 <arg>dispatcher@sagip.live</arg>
@@ -9,498 +9,325 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231202 21:11:01.062" level="INFO">Opening browser 'Chrome' to base url 'https://sagip-automation.vercel.app/'.</msg>
-<status status="PASS" starttime="20231202 21:11:01.062" endtime="20231202 21:11:05.877"/>
+<msg timestamp="20231203 00:48:22.005" level="INFO">Opening browser 'Chrome' to base url 'https://sagip-automation.vercel.app/'.</msg>
+<status status="PASS" starttime="20231203 00:48:22.004" endtime="20231203 00:48:28.562"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20231202 21:11:05.877" endtime="20231202 21:11:06.031"/>
+<status status="PASS" starttime="20231203 00:48:28.563" endtime="20231203 00:48:28.923"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:06.033" level="INFO">Opening url 'https://sagip-automation.vercel.app/'</msg>
-<status status="PASS" starttime="20231202 21:11:06.032" endtime="20231202 21:11:07.607"/>
+<msg timestamp="20231203 00:48:28.925" level="INFO">Opening url 'https://sagip-automation.vercel.app/'</msg>
+<status status="PASS" starttime="20231203 00:48:28.924" endtime="20231203 00:48:30.522"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
 <arg>10 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:07.607" endtime="20231202 21:11:07.763"/>
+<status status="PASS" starttime="20231203 00:48:30.523" endtime="20231203 00:48:31.374"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:07.765" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[3]/button[1]'.</msg>
-<status status="PASS" starttime="20231202 21:11:07.763" endtime="20231202 21:11:07.878"/>
+<msg timestamp="20231203 00:48:31.377" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20231203 00:48:31.375" endtime="20231203 00:48:31.968"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=identifier</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:07.879" level="INFO">Clicking element 'id=identifier'.</msg>
-<status status="PASS" starttime="20231202 21:11:07.878" endtime="20231202 21:11:07.971"/>
+<msg timestamp="20231203 00:48:31.970" level="INFO">Clicking element 'id=identifier'.</msg>
+<status status="PASS" starttime="20231203 00:48:31.969" endtime="20231203 00:48:32.122"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:identifier</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:07.973" level="INFO">Typing text 'dispatcher@sagip.live' into text field 'id:identifier'.</msg>
-<status status="PASS" starttime="20231202 21:11:07.971" endtime="20231202 21:11:08.148"/>
+<msg timestamp="20231203 00:48:32.125" level="INFO">Typing text 'dispatcher@sagip.live' into text field 'id:identifier'.</msg>
+<status status="PASS" starttime="20231203 00:48:32.124" endtime="20231203 00:48:32.310"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=password</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:08.148" level="INFO">Clicking element 'id=password'.</msg>
-<status status="PASS" starttime="20231202 21:11:08.148" endtime="20231202 21:11:08.208"/>
+<msg timestamp="20231203 00:48:32.312" level="INFO">Clicking element 'id=password'.</msg>
+<status status="PASS" starttime="20231203 00:48:32.311" endtime="20231203 00:48:32.405"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:08.209" level="INFO">Typing text 'Sagip.00' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20231202 21:11:08.208" endtime="20231202 21:11:08.638"/>
+<msg timestamp="20231203 00:48:32.409" level="INFO">Typing text 'Sagip.00' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231203 00:48:32.407" endtime="20231203 00:48:32.520"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[1]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:08.639" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[1]/button'.</msg>
-<status status="PASS" starttime="20231202 21:11:08.638" endtime="20231202 21:11:08.703"/>
+<msg timestamp="20231203 00:48:32.522" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[1]/button'.</msg>
+<status status="PASS" starttime="20231203 00:48:32.521" endtime="20231203 00:48:32.618"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
 <arg>60 seconds</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:08.703" endtime="20231202 21:11:10.077"/>
+<status status="PASS" starttime="20231203 00:48:32.618" endtime="20231203 00:48:35.272"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:10.097" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:10.077" endtime="20231202 21:11:10.097"/>
+<msg timestamp="20231203 00:48:35.307" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:35.272" endtime="20231203 00:48:35.307"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:01.061" endtime="20231202 21:11:10.098"/>
+<status status="PASS" starttime="20231203 00:48:22.004" endtime="20231203 00:48:35.307"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:01.059" endtime="20231202 21:11:10.098"/>
+<status status="PASS" starttime="20231203 00:48:22.003" endtime="20231203 00:48:35.307"/>
 </kw>
-<test id="s1-t1" name="1_TS009_TC001" line="31">
-<kw name="Click Assistance Request">
+<test id="s1-t1" name="1_TS010_TC001" line="40">
+<kw name="Given the user is on the assistance request page">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://sagip-automation.vercel.app/admin/emergency-reports</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:10.098" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
-<status status="PASS" starttime="20231202 21:11:10.098" endtime="20231202 21:11:10.688"/>
+<msg timestamp="20231203 00:48:35.312" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
+<status status="PASS" starttime="20231203 00:48:35.311" endtime="20231203 00:48:35.819"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:10.689" endtime="20231202 21:11:11.562"/>
+<status status="PASS" starttime="20231203 00:48:35.819" endtime="20231203 00:48:36.943"/>
 </kw>
+<status status="PASS" starttime="20231203 00:48:35.309" endtime="20231203 00:48:36.943"/>
+</kw>
+<kw name="When the user selects a resolved assistance request">
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${element}</var>
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231202 21:11:11.580" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b28fb49aed8417ef55612baf6886cfb", element="D2B6F6DE34874FA32F91AF3B9642EF5F_element_57")&gt;</msg>
-<status status="PASS" starttime="20231202 21:11:11.562" endtime="20231202 21:11:11.580"/>
+<msg timestamp="20231203 00:48:36.968" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f519c74fab48fad8bcdf05a286ef33fc", element="15D73DFD63FBAF7AF4337E25EF58961F_element_55")&gt;</msg>
+<status status="PASS" starttime="20231203 00:48:36.944" endtime="20231203 00:48:36.968"/>
 </kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<arg>'${element}'=='None'</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${element}</arg>
 <arg>Assistance Present</arg>
-<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20231202 21:11:11.581" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="Assistance Present">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:11.585" level="INFO">Clicking element 'xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:11.583" endtime="20231202 21:11:11.682"/>
+<msg timestamp="20231203 00:48:36.971" level="INFO">Clicking element 'xpath=//div[contains(text(), 'resolved')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:36.970" endtime="20231203 00:48:37.082"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:11.682" endtime="20231202 21:11:11.763"/>
+<status status="PASS" starttime="20231203 00:48:37.083" endtime="20231203 00:48:37.287"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:11.825" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:11.764" endtime="20231202 21:11:11.825"/>
+<msg timestamp="20231203 00:48:37.340" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:37.287" endtime="20231203 00:48:37.340"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:11.582" endtime="20231202 21:11:11.825"/>
+<status status="PASS" starttime="20231203 00:48:36.969" endtime="20231203 00:48:37.340"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:11.581" endtime="20231202 21:11:11.825"/>
+<status status="PASS" starttime="20231203 00:48:36.968" endtime="20231203 00:48:37.340"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:10.098" endtime="20231202 21:11:11.825"/>
+<status status="PASS" starttime="20231203 00:48:36.944" endtime="20231203 00:48:37.340"/>
+</kw>
+<kw name="Then the review request should appear">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231203 00:48:37.371" level="INFO">Clicking element 'xpath=//div[contains(text(), 'resolved')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:37.370" endtime="20231203 00:48:37.802"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231203 00:48:37.802" endtime="20231203 00:48:39.331"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
+<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:11.863" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:11.826" endtime="20231202 21:11:11.864"/>
+<msg timestamp="20231203 00:48:39.780" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:39.331" endtime="20231203 00:48:39.780"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:10.098" endtime="20231202 21:11:11.864"/>
+<status status="PASS" starttime="20231203 00:48:37.369" endtime="20231203 00:48:39.780"/>
+</kw>
+<status status="PASS" starttime="20231203 00:48:35.307" endtime="20231203 00:48:39.781"/>
 </test>
-<test id="s1-t2" name="1_TS009_TC002" line="36">
-<kw name="Accept Assistance Request">
-<kw name="Click Assistance Request">
+<test id="s1-t2" name="1_TS010_TC002" line="45">
+<kw name="Given the user is on the assistance request page">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://sagip-automation.vercel.app/admin/emergency-reports</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:11.867" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
-<status status="PASS" starttime="20231202 21:11:11.867" endtime="20231202 21:11:12.343"/>
+<msg timestamp="20231203 00:48:39.787" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
+<status status="PASS" starttime="20231203 00:48:39.786" endtime="20231203 00:48:40.915"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:12.343" endtime="20231202 21:11:13.233"/>
+<status status="PASS" starttime="20231203 00:48:40.915" endtime="20231203 00:48:42.008"/>
 </kw>
+<status status="PASS" starttime="20231203 00:48:39.786" endtime="20231203 00:48:42.008"/>
+</kw>
+<kw name="When the user selects a resolved assistance request">
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${element}</var>
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231202 21:11:13.272" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b28fb49aed8417ef55612baf6886cfb", element="6ECDAA71A729F2FE9D817891EB4B52C2_element_71")&gt;</msg>
-<status status="PASS" starttime="20231202 21:11:13.233" endtime="20231202 21:11:13.272"/>
+<msg timestamp="20231203 00:48:42.023" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f519c74fab48fad8bcdf05a286ef33fc", element="CECBC44C8B2A51F4069DA29EA58AD6B9_element_82")&gt;</msg>
+<status status="PASS" starttime="20231203 00:48:42.009" endtime="20231203 00:48:42.023"/>
 </kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<arg>'${element}'=='None'</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${element}</arg>
 <arg>Assistance Present</arg>
-<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20231202 21:11:13.273" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="Assistance Present">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:13.276" level="INFO">Clicking element 'xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:13.275" endtime="20231202 21:11:13.383"/>
+<msg timestamp="20231203 00:48:42.025" level="INFO">Clicking element 'xpath=//div[contains(text(), 'resolved')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:42.024" endtime="20231203 00:48:42.198"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:13.384" endtime="20231202 21:11:13.470"/>
+<status status="PASS" starttime="20231203 00:48:42.198" endtime="20231203 00:48:44.276"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:13.533" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:13.470" endtime="20231202 21:11:13.533"/>
+<msg timestamp="20231203 00:48:44.360" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:44.276" endtime="20231203 00:48:44.360"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:13.274" endtime="20231202 21:11:13.534"/>
+<status status="PASS" starttime="20231203 00:48:42.024" endtime="20231203 00:48:44.360"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:13.272" endtime="20231202 21:11:13.534"/>
+<status status="PASS" starttime="20231203 00:48:42.024" endtime="20231203 00:48:44.360"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:11.867" endtime="20231202 21:11:13.534"/>
+<status status="PASS" starttime="20231203 00:48:42.009" endtime="20231203 00:48:44.361"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Reject Request')]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:13.534" endtime="20231202 21:11:13.553"/>
-</kw>
+<kw name="And the user clicks the incident details button">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Accept Request')]</arg>
+<arg>xpath=//a[contains(text(), 'Incident Details')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:13.555" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Accept Request')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:13.553" endtime="20231202 21:11:13.643"/>
+<msg timestamp="20231203 00:48:44.362" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Incident Details')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:44.362" endtime="20231203 00:48:44.614"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:13.643" endtime="20231202 21:11:14.853"/>
+<status status="PASS" starttime="20231203 00:48:44.614" endtime="20231203 00:48:45.694"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:11.866" endtime="20231202 21:11:14.853"/>
+<status status="PASS" starttime="20231203 00:48:44.361" endtime="20231203 00:48:45.694"/>
 </kw>
+<kw name="Then the incident details should appear">
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:15.281" level="INFO">Element 'xpath=//button[contains(text(), 'Send Responders')]' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:14.853" endtime="20231202 21:11:15.281"/>
+<msg timestamp="20231203 00:48:45.783" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:45.695" endtime="20231203 00:48:45.783"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:11.866" endtime="20231202 21:11:15.281"/>
+<status status="PASS" starttime="20231203 00:48:45.695" endtime="20231203 00:48:45.783"/>
+</kw>
+<status status="PASS" starttime="20231203 00:48:39.785" endtime="20231203 00:48:45.785"/>
 </test>
-<test id="s1-t3" name="1_TS009_TC003" line="41">
-<kw name="Accept Assistance Request">
-<kw name="Click Assistance Request">
+<test id="s1-t3" name="1_TS010_TC003" line="51">
+<kw name="Given the user is on the assistance request page">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://sagip-automation.vercel.app/admin/emergency-reports</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:15.284" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
-<status status="PASS" starttime="20231202 21:11:15.284" endtime="20231202 21:11:15.601"/>
+<msg timestamp="20231203 00:48:45.789" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
+<status status="PASS" starttime="20231203 00:48:45.789" endtime="20231203 00:48:47.390"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:15.601" endtime="20231202 21:11:16.902"/>
+<status status="PASS" starttime="20231203 00:48:47.390" endtime="20231203 00:48:48.895"/>
 </kw>
+<status status="PASS" starttime="20231203 00:48:45.789" endtime="20231203 00:48:48.896"/>
+</kw>
+<kw name="When the user selects a resolved assistance request">
 <kw name="Get WebElement" library="SeleniumLibrary">
 <var>${element}</var>
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231202 21:11:17.056" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b28fb49aed8417ef55612baf6886cfb", element="7F7C8E7F9C6ED878F06EFA4685BE3835_element_99")&gt;</msg>
-<status status="PASS" starttime="20231202 21:11:16.902" endtime="20231202 21:11:17.056"/>
+<msg timestamp="20231203 00:48:48.962" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="f519c74fab48fad8bcdf05a286ef33fc", element="967EBA824A8B095A2E83E859BA5285DD_element_116")&gt;</msg>
+<status status="PASS" starttime="20231203 00:48:48.897" endtime="20231203 00:48:48.962"/>
 </kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<arg>'${element}'=='None'</arg>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${element}</arg>
 <arg>Assistance Present</arg>
-<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20231202 21:11:17.057" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="Assistance Present">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
+<arg>xpath=//div[contains(text(), 'resolved')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:17.065" level="INFO">Clicking element 'xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:17.063" endtime="20231202 21:11:17.719"/>
+<msg timestamp="20231203 00:48:48.965" level="INFO">Clicking element 'xpath=//div[contains(text(), 'resolved')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:48.964" endtime="20231203 00:48:49.955"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:17.720" endtime="20231202 21:11:18.079"/>
+<status status="PASS" starttime="20231203 00:48:49.955" endtime="20231203 00:48:50.282"/>
 </kw>
 <kw name="Element Should Be Visible" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:18.121" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:18.080" endtime="20231202 21:11:18.122"/>
+<msg timestamp="20231203 00:48:50.615" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
+<status status="PASS" starttime="20231203 00:48:50.282" endtime="20231203 00:48:50.616"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:17.062" endtime="20231202 21:11:18.122"/>
+<status status="PASS" starttime="20231203 00:48:48.963" endtime="20231203 00:48:50.617"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:17.056" endtime="20231202 21:11:18.122"/>
+<status status="PASS" starttime="20231203 00:48:48.963" endtime="20231203 00:48:50.617"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:15.284" endtime="20231202 21:11:18.122"/>
+<status status="PASS" starttime="20231203 00:48:48.896" endtime="20231203 00:48:50.617"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Reject Request')]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:18.122" endtime="20231202 21:11:18.152"/>
-</kw>
+<kw name="And the user clicks the incident details button">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Accept Request')]</arg>
+<arg>xpath=//a[contains(text(), 'Incident Details')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:18.153" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Accept Request')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:18.152" endtime="20231202 21:11:18.283"/>
+<msg timestamp="20231203 00:48:50.627" level="INFO">Clicking element 'xpath=//a[contains(text(), 'Incident Details')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:50.622" endtime="20231203 00:48:51.469"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[2]/div[3]/div[2]/div[1]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:18.283" endtime="20231202 21:11:19.072"/>
+<status status="PASS" starttime="20231203 00:48:51.470" endtime="20231203 00:48:52.982"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:15.283" endtime="20231202 21:11:19.072"/>
+<status status="PASS" starttime="20231203 00:48:50.620" endtime="20231203 00:48:52.983"/>
 </kw>
+<kw name="And the user clicks on the print report button">
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
+<arg>xpath=//button[contains(text(), 'Print Report')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:19.073" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Send Responders')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:19.072" endtime="20231202 21:11:19.164"/>
+<msg timestamp="20231203 00:48:52.985" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Print Report')]'.</msg>
+<status status="PASS" starttime="20231203 00:48:52.985" endtime="20231203 00:48:53.753"/>
 </kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:19.191" level="INFO">Element 'xpath=//button[contains(text(), 'Send Responders')]' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:19.164" endtime="20231202 21:11:19.191"/>
+<status status="PASS" starttime="20231203 00:48:52.984" endtime="20231203 00:48:53.753"/>
 </kw>
-<status status="PASS" starttime="20231202 21:11:15.283" endtime="20231202 21:11:19.191"/>
+<kw name="Then an incident report should be displayed">
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>/admin/emergency-reports/</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20231203 00:48:53.776" level="INFO">Current location contains '/admin/emergency-reports/'.</msg>
+<status status="PASS" starttime="20231203 00:48:53.755" endtime="20231203 00:48:53.776"/>
+</kw>
+<status status="PASS" starttime="20231203 00:48:53.755" endtime="20231203 00:48:53.777"/>
+</kw>
+<status status="PASS" starttime="20231203 00:48:45.787" endtime="20231203 00:48:53.777"/>
 </test>
-<test id="s1-t4" name="1_TS009_TC004" line="47">
-<kw name="Accept Assistance Request">
-<kw name="Click Assistance Request">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://sagip-automation.vercel.app/admin/emergency-reports</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:19.196" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
-<status status="PASS" starttime="20231202 21:11:19.195" endtime="20231202 21:11:19.683"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:19.683" endtime="20231202 21:11:20.669"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${element}</var>
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231202 21:11:21.059" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b28fb49aed8417ef55612baf6886cfb", element="E4AF4B95704C0C006BC687FE8EF67B73_element_144")&gt;</msg>
-<status status="PASS" starttime="20231202 21:11:20.669" endtime="20231202 21:11:21.059"/>
-</kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<arg>'${element}'=='None'</arg>
-<arg>Assistance Present</arg>
-<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20231202 21:11:21.060" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<kw name="Assistance Present">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:21.072" level="INFO">Clicking element 'xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:21.068" endtime="20231202 21:11:21.461"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:21.462" endtime="20231202 21:11:21.978"/>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:22.022" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:21.978" endtime="20231202 21:11:22.023"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:21.066" endtime="20231202 21:11:22.023"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:21.060" endtime="20231202 21:11:22.023"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:19.193" endtime="20231202 21:11:22.023"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Reject Request')]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:22.023" endtime="20231202 21:11:22.058"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Accept Request')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:22.058" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Accept Request')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:22.058" endtime="20231202 21:11:22.174"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:22.174" endtime="20231202 21:11:22.912"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:19.193" endtime="20231202 21:11:22.912"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css=.css-8mmkcg &gt; path</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:22.913" level="INFO">Clicking element 'css=.css-8mmkcg &gt; path'.</msg>
-<status status="PASS" starttime="20231202 21:11:22.913" endtime="20231202 21:11:23.724"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=react-select-2-option-1</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:23.725" level="INFO">Clicking element 'id=react-select-2-option-1'.</msg>
-<status status="PASS" starttime="20231202 21:11:23.725" endtime="20231202 21:11:23.817"/>
-</kw>
-<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
-<arg>id=react-select-2-input-listbox</arg>
-<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
-<msg timestamp="20231202 21:11:23.838" level="INFO">Element 'id=react-select-2-input-listbox' did not exist.</msg>
-<status status="PASS" starttime="20231202 21:11:23.818" endtime="20231202 21:11:23.838"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:19.193" endtime="20231202 21:11:23.838"/>
-</test>
-<test id="s1-t5" name="1_TS009_TC005" line="54">
-<kw name="Accept Assistance Request">
-<kw name="Click Assistance Request">
-<kw name="Go To" library="SeleniumLibrary">
-<arg>https://sagip-automation.vercel.app/admin/emergency-reports</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20231202 21:11:23.841" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/emergency-reports'</msg>
-<status status="PASS" starttime="20231202 21:11:23.841" endtime="20231202 21:11:24.240"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[3]/div[1]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:24.240" endtime="20231202 21:11:25.457"/>
-</kw>
-<kw name="Get WebElement" library="SeleniumLibrary">
-<var>${element}</var>
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
-<doc>Returns the first WebElement matching the given ``locator``.</doc>
-<msg timestamp="20231202 21:11:25.747" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="6b28fb49aed8417ef55612baf6886cfb", element="4E9C1F4DEEFE26D89CAB7159E93E068A_element_194")&gt;</msg>
-<status status="PASS" starttime="20231202 21:11:25.457" endtime="20231202 21:11:25.747"/>
-</kw>
-<kw name="Run Keyword Unless" library="BuiltIn">
-<arg>'${element}'=='None'</arg>
-<arg>Assistance Present</arg>
-<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
-<msg timestamp="20231202 21:11:25.747" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<kw name="Assistance Present">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:25.749" level="INFO">Clicking element 'xpath=//div[contains(text(), 'unverified') or contains(text(), 'incomplete')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:25.749" endtime="20231202 21:11:25.983"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:25.983" endtime="20231202 21:11:26.148"/>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:26.226" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div/div[2]/div[1]/p' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:26.149" endtime="20231202 21:11:26.226"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:25.748" endtime="20231202 21:11:26.226"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:25.747" endtime="20231202 21:11:26.226"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:23.841" endtime="20231202 21:11:26.227"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Reject Request')]</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20231202 21:11:26.227" endtime="20231202 21:11:26.249"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Accept Request')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:26.249" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Accept Request')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:26.249" endtime="20231202 21:11:26.763"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:26.765" endtime="20231202 21:11:27.625"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:23.840" endtime="20231202 21:11:27.626"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css=.css-8mmkcg &gt; path</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:27.627" level="INFO">Clicking element 'css=.css-8mmkcg &gt; path'.</msg>
-<status status="PASS" starttime="20231202 21:11:27.626" endtime="20231202 21:11:28.223"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=react-select-2-option-1</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:28.224" level="INFO">Clicking element 'id=react-select-2-option-1'.</msg>
-<status status="PASS" starttime="20231202 21:11:28.223" endtime="20231202 21:11:28.318"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//button[contains(text(), 'Send Responders')]</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231202 21:11:28.319" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Send Responders')]'.</msg>
-<status status="PASS" starttime="20231202 21:11:28.318" endtime="20231202 21:11:28.486"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>css=.Toastify__toast--success</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231202 21:11:28.486" endtime="20231202 21:11:30.854"/>
-</kw>
-<kw name="Element Should Be Visible" library="SeleniumLibrary">
-<arg>css=.Toastify__toast--success</arg>
-<doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<msg timestamp="20231202 21:11:30.881" level="INFO">Element 'css=.Toastify__toast--success' is displayed.</msg>
-<status status="PASS" starttime="20231202 21:11:30.855" endtime="20231202 21:11:30.881"/>
-</kw>
-<status status="PASS" starttime="20231202 21:11:23.839" endtime="20231202 21:11:30.881"/>
-</test>
-<status status="PASS" starttime="20231202 21:11:00.746" endtime="20231202 21:11:30.883"/>
+<status status="PASS" starttime="20231203 00:48:21.502" endtime="20231203 00:48:53.792"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="001 TS009">001 TS009</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="001 TS010">001 TS010</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231202 21:11:11.581" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20231202 21:11:13.273" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20231202 21:11:17.057" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20231202 21:11:21.060" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
-<msg timestamp="20231202 21:11:25.747" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
 </errors>
 </robot>

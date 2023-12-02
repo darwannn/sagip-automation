@@ -11,7 +11,6 @@ ${OPTION}     Typhoon
 
 *** Keyword ***
 Click Wellness Check
-
     Go To    https://sagip-automation.vercel.app/admin/wellness-check
     Wait Until Page Contains Element    xpath=//*[@id="root"]/div[1]/div[2]/div
 

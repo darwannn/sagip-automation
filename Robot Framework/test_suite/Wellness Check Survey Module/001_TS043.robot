@@ -29,7 +29,7 @@ Wellness Check Present
    Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Alert Should Be Present   action=LEAVE
+    Handle Alert    action=DISMISS
    # Close Browser
 
 1_TS043_TC002
@@ -38,7 +38,7 @@ Wellness Check Present
    Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Alert Should Be Present  action=DISMISS
+    Handle Alert    
    # Close Browser
 
 1_TS043_TC003

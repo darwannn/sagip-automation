@@ -11,7 +11,7 @@ Given the user is on the assistance request page
 
 When the user selects a resolved assistance request
     ${element}=     Get WebElement    xpath=//div[contains(text(), 'resolved')]
-    Run Keyword Unless  '${element}'=='None'  Assistance Present
+    Run Keyword If   ${element}     Assistance Present
 
 Then the review request should appear
     Click Element   xpath=//div[contains(text(), 'resolved')]

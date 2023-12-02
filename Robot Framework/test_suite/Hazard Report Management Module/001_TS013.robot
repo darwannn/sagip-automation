@@ -12,7 +12,7 @@ Given the user is on the hazard report page
 
 When the user selects an unverified hazard report
     ${element}=     Get WebElement    xpath=//div[contains(text(), 'unverified')]
-    Run Keyword Unless  '${element}'=='None'  Hazard Present
+     Run Keyword If   ${element}      Hazard Present
 
 Then the review hazard report should appear
     Click Element   xpath=//div[contains(text(), 'unverified')]
