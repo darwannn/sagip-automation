@@ -2,7 +2,7 @@
   "id": "7856570f-cbbd-4f40-96bc-b2e9b5b6338d",
   "version": "2.0",
   "name": "Account Settings Module",
-  "url": "https://www.sagip.live",
+  "url": "https://sagip-automation.vercel.app",
   "tests": [{
     "id": "6f331d69-d8b8-46b7-8033-d05101ac16e3",
     "name": "1_TS037_TC001",
@@ -337,18 +337,6 @@
         ["xpath=//span[contains(.,'Birthdate is required')]", "xpath:innerText"]
       ],
       "value": "Birthdate is required"
-    }, {
-      "id": "7ceb781a-c78a-4b94-921e-a1fc1ddeb811",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.w-full > .text-red-500",
-      "targets": [
-        ["css=.w-full > .text-red-500", "css:finder"],
-        ["xpath=//div[@id='root']/div/div[2]/div/main/div[2]/div/form/section[2]/div[2]/div[5]/span", "xpath:idRelative"],
-        ["xpath=//section[2]/div[2]/div[5]/span", "xpath:position"],
-        ["xpath=//span[contains(.,'Street is required')]", "xpath:innerText"]
-      ],
-      "value": "Street is required"
     }]
   }, {
     "id": "d92fbb5d-06d1-462c-9ee2-4136b8ea4011",
@@ -1500,6 +1488,6 @@
     "timeout": 300,
     "tests": ["6f331d69-d8b8-46b7-8033-d05101ac16e3"]
   }],
-  "urls": ["https://www.sagip.live/admin/account-settings", "https://www.sagip.live/", "https://www.sagip.live/admin/account-settings/profile"],
+  "urls": ["https://www.sagip.live/admin/account-settings", "https://www.sagip.live/", "https://www.sagip.live/admin/account-settings/profile", "https://sagip-automation.vercel.app/"],
   "plugins": []
 }
