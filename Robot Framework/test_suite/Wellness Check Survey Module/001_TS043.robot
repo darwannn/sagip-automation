@@ -4,13 +4,12 @@ Library    XML
 Library    String
 Library    Collections
 Library    Process
-Resource    ../../suite_setup/login.robot
+Resource    login.robot
 
-Suite Setup     Employee Login
+Suite Setup      Employee Login
 
 *** Keyword ***
 Click Wellness Check
- 
     Go To    https://sagip-automation.vercel.app/admin/wellness-check
     Wait Until Page Contains Element    xpath=//*[@id="root"]/div[1]/div[2]/div
 
@@ -30,7 +29,8 @@ Wellness Check Present
    Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-   Handle Alert 
+   Alert Should Be Present   action=LEAVE
+   # Close Browser
 
 1_TS043_TC002
    Click Wellness Check
@@ -38,7 +38,8 @@ Wellness Check Present
    Click Element     xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]
    Wait Until Page Contains Element  xpath=/html/body/div[3]/div/ul/li[5]/span/div
    Click Element     xpath=/html/body/div[3]/div/ul/li[5]/span/div
-    Handle Alert    action=DISMISS
+   Alert Should Be Present  action=DISMISS
+   # Close Browser
 
 1_TS043_TC003
    Click Wellness Check
@@ -50,6 +51,7 @@ Wellness Check Present
     Log    Alert Text: ${alert_text}
     Wait Until Element Is Visible   css=.Toastify__toast--success
     Element Should Be Visible    css=.Toastify__toast--success
+   #  Close Browser
 
 
    
