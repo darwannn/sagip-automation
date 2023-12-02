@@ -1,0 +1,1977 @@
+{
+  "id": "4a457a18-fb3b-4dd2-a634-9b3b56c1af34",
+  "version": "2.0",
+  "name": "Emergency Facility Directory Map Module",
+  "url": "https://sagip-automation.vercel.app/",
+  "tests": [{
+    "id": "c9e883c3-89b8-4081-895c-05e8168ee8d4",
+    "name": "1_TS005_TC001",
+    "commands": [{
+      "id": "0635463c-fca5-4aaa-a024-b6d0bd6ba10c",
+      "comment": "",
+      "command": "run",
+      "target": "employee_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4e7a8d1-e7ef-4846-bca6-8c50d75f88e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23b7fb98-fe99-43c0-b440-57c1be7e1a8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/p",
+      "targets": [
+        ["css=.border:nth-child(1) .pb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a71afd6-d48c-4427-af90-9933a2de6173",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/p",
+      "targets": [],
+      "value": "facilityName"
+    }, {
+      "id": "7cf955e5-adf4-47e2-ae24-e460abde5f06",
+      "comment": "",
+      "command": "//storeText",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d951bde0-cc73-406b-b3a8-550a57816992",
+      "comment": "",
+      "command": "//assertConfirmation",
+      "target": "Are you sure you want to delete ${facilityName}?",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c0f2a8b5-bbc9-4bb6-be9b-4c8f3e0fd7ce",
+    "name": "employee_login",
+    "commands": [{
+      "id": "716572de-36fa-462b-a541-52d535a88fca",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f00a57e3-f3e4-4742-a50e-4f20bedecbb4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector('h1.text-2xl.font-bold.text-primary-500') !== null",
+      "targets": [],
+      "value": "elementExists"
+    }, {
+      "id": "ebcdee0e-e155-4e1b-a7c6-05f0dba5201f",
+      "comment": "",
+      "command": "if",
+      "target": "${elementExists} == false",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "816b4bbd-dba8-4d0d-a2ea-132b29534f88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c94c4cf-d376-48e8-b938-0e63524a1efb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a1241c0-24d1-487b-900f-6cc6b53e5fdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9ab630a-9c73-4503-aa04-dd4eba76814a",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "9a57fe28-48e2-4f56-8368-e67effc6f2a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "d7c46567-7b01-451d-872a-d7aa44f49b7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbc9bcde-32c2-4b39-9968-f1a868c360a7",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/header/h1",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1685e8e7-704f-414a-ad26-c7cb40020544",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/header/h1",
+      "targets": [],
+      "value": "Dashboard"
+    }, {
+      "id": "2908c1b3-19ba-4696-b9fe-f6920b8ba334",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7b38ef97-1ab0-4218-958e-a672795c9bd9",
+    "name": "1_TS003_TC001",
+    "commands": [{
+      "id": "0bf3f4af-5d06-4bfa-be40-f4401a8d57c8",
+      "comment": "",
+      "command": "//run",
+      "target": "employee_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "daeb20c8-983e-4e5e-9fae-e33557854eb0",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec28cfeb-f661-4978-850d-1c1ebfb54ce4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.disabled\\3Atext-gray-200 > svg",
+      "targets": [
+        ["css=.disabled\\3Atext-gray-200 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "64bd170e-38a2-4ee4-a7ef-d4836430df39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gm-style > div > div:nth-child(2)",
+      "targets": [
+        ["css=.gm-style > div > div:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff84c179-05b8-41e3-80e8-a10db6090001",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mb-5 > .text-xl",
+      "targets": [
+        ["css=.mb-5 > .text-xl", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Facility Map')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "637f5b9a-65e6-4b42-a56e-fa3815306c9d",
+    "name": "1_TS003_TC002",
+    "commands": [{
+      "id": "67711c82-e07c-491d-a1be-e1bd261cc881",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4606c28b-f95e-4be1-8eaa-dc63a3bfdf58",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Facility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df49351-4efe-4f65-b092-10aa9fb849d6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex-col > .text-sm",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/p", "xpath:position"]
+      ],
+      "value": "This field is required"
+    }]
+  }, {
+    "id": "bbc8806a-c81b-4f10-9f17-34697d5a200f",
+    "name": "1_TS003_TC003",
+    "commands": [{
+      "id": "6304e214-74a4-4664-bc45-73b411de51f9",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6a70b95-9cbf-4040-a110-b8aeb2a10458",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c78006-c415-4b6c-b5dd-ba9c70f8ccac",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Malolos Fire Station"
+    }, {
+      "id": "452609d3-deb4-4e34-850a-4c50bd3e1e89",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbf39b1b-061b-4501-a371-f984a040bff2",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "09898765678"
+    }, {
+      "id": "03f4e44c-3863-4834-a520-3390fb0995e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "290d1fd8-ae7d-47a0-9207-3bc0df314ff7",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Fire Station"
+    }, {
+      "id": "952f75e7-8565-4718-95fe-a5590ea5fc47",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\invalid_image.gif"
+    }, {
+      "id": "d30f758b-bb4b-4b0a-a360-864bbaa33db8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Facility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3187514-f707-4f81-8947-e8b00cddf72c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.gap-2 > .text-sm",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "Only PNG, JPEG, and JPG files are allowed"
+    }]
+  }, {
+    "id": "03204c65-3427-440e-bc82-c100df788470",
+    "name": "1_TS003_TC005",
+    "commands": [{
+      "id": "041ca8ae-0466-4316-9853-e92ce792322e",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb7b809f-b8c4-4dcc-9f50-35b66d3460b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e542676-c177-4dc9-ba85-baf1f2870c8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Malolos Fire Station"
+    }, {
+      "id": "728cd219-e16b-4d8f-9f52-08e3c67eeffd",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b8dbf0-f1a8-4b7e-856c-18b25e993ecc",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "098"
+    }, {
+      "id": "a0194c33-dc5e-4f92-8468-e8a80b104255",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bb7d2b4-6b6d-4884-bb44-bcb5dee780ba",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Fire Station"
+    }, {
+      "id": "489df3f5-2f8b-4ffb-82a4-3db26a8bad15",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "96e365dd-0542-4b9f-9e04-7c5f3558bdba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Facility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea00a5be-f16e-40a0-b09d-2b10e639a981",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group > .text-red-500",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "Invalid contact number"
+    }]
+  }, {
+    "id": "e93af068-ed48-4724-942e-052209f1a228",
+    "name": "1_TS003_TC004",
+    "commands": [{
+      "id": "626940e6-e816-4916-8d66-3ffc8f14a150",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d3be1fc-134a-486b-bd4e-d493f55dea95",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad2a62d6-c599-4d3f-b29b-acd712cf3175",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Malolos Fire Station"
+    }, {
+      "id": "e559dcee-bde7-4bbe-bcf7-e74a13c09b86",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90ac6156-1952-40f9-bdfa-455b19c70c95",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "09898765678"
+    }, {
+      "id": "35e7086a-363f-413f-8da7-94755fc1a0de",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e45178f3-c81b-45c2-8fc4-ede3b306aa3c",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Fire Station"
+    }, {
+      "id": "d698dcb2-ee4a-471a-910c-e467560e9d79",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\large_image.jpg"
+    }, {
+      "id": "c3ea44e1-28f9-4f0f-9160-52f60cbaa26d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Facility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b17f533a-41c1-4557-aef4-9104fb9eaa16",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.gap-2 > .text-sm",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "File size should be less than 10MB"
+    }]
+  }, {
+    "id": "a9c79d0e-9688-40ed-8858-20314933eeaf",
+    "name": "1_TS003_TC006",
+    "commands": [{
+      "id": "020ab462-001c-47dc-8c35-c412c9e54214",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28c2c09e-499c-47b7-9475-b947533e4a9b",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d238f753-11b9-49ae-8f81-b2277f3b1c58",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Malolos Fire Station"
+    }, {
+      "id": "e542aa6c-0984-48df-b7c4-81a34c1471ac",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8bc4cb0-ffff-4987-93e4-3a463a6e1a2f",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "09898765678"
+    }, {
+      "id": "c8599185-03f3-41bf-af54-57168ff8e860",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84646ec7-f664-412e-acd4-f5fa61c18731",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Fire Station"
+    }, {
+      "id": "9c145d4b-da72-49e0-b317-9c2e33b9a477",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "9d1ac4b0-9dd2-45da-9e19-4d6be9f8fb0f",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.form-group >.text-red-500",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ec28c119-13eb-433f-ab3b-f1c0018d6d0a",
+    "name": "1_TS003_TC007",
+    "commands": [{
+      "id": "181cb130-ee52-4a0c-8760-7700fa5ad793",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS003_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27f2f6f5-4fa9-4320-88c1-8c7b84ef226f",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3be22060-7594-4141-87b0-4b3ef1e040de",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Malolos Fire Station"
+    }, {
+      "id": "e3cf5d2e-b338-4be6-a205-968057b04e64",
+      "comment": "",
+      "command": "click",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede9c075-a98b-4ea5-a20e-b3f59c312dbe",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "09898765678"
+    }, {
+      "id": "e55d19bc-b476-4d0c-b70f-979850c71d1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc4c8fde-9ac3-4bf6-8a49-bac8b19cec66",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Fire Station"
+    }, {
+      "id": "b740ca54-1d81-4c1c-9e40-f4473f60115e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "a86dc30d-b71c-44b3-b028-29c683daaa6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Facility')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "108ca8a7-dfc4-4473-a42b-74c7f5e27474",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "60000"
+    }, {
+      "id": "a3b26b07-fc47-4188-ae6c-03f44ac100b7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "08c575bd-73a2-4869-80b5-5e554f798161",
+    "name": "1_TS004_TC001",
+    "commands": [{
+      "id": "6f6f56bc-cf5f-48b8-85a3-2121d2b98f89",
+      "comment": "",
+      "command": "run",
+      "target": "employee_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e809f49e-baa5-4636-96ac-7a585906143b",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c67eaf78-4d88-4bba-9bb1-b10fe52ff747",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) .pb-3",
+      "targets": [
+        ["css=.border:nth-child(1) .pb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30a941c5-977b-4708-8a30-1318c7a8a7b9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/div/p",
+      "targets": [
+        ["css=.justify-between > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Facility Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5c18541e-e788-43d8-8596-390974faadbc",
+    "name": "1_TS004_TC002",
+    "commands": [{
+      "id": "b872f1eb-2f0f-43db-8fbb-7d2579610d41",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52b7d998-946f-4bf2-a5fd-e8b9bd313ebf",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fc0d3ae-c514-4790-96af-86e8c6f46ae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) .pb-3",
+      "targets": [
+        ["css=.border:nth-child(1) .pb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a4d3d7f-a42a-4a42-a2f8-6e2e95b17df0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shadow-sm",
+      "targets": [
+        ["css=.shadow-sm", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aff1808a-dc40-45e2-bf04-1552d9cfc3c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0aa176e-bfc5-4fcb-a37c-56e9b343f160",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shadow-sm",
+      "targets": [
+        ["css=.shadow-sm", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1881a5b1-a04f-409a-b428-20bc6ff137df",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d198dce-e311-4e92-a1d1-43aae5629003",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=status", "id"],
+        ["name=status", "name"],
+        ["css=#status", "css:finder"],
+        ["xpath=//select[@id='status']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[6]/select", "xpath:idRelative"],
+        ["xpath=//div[6]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1aaa0b02-2af7-4e46-bc49-dae7f218dc20",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "6258eec9-f673-42a4-8311-954812d563de",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80b0daa5-c05e-4357-8d90-39bbecb6603c",
+      "comment": "",
+      "command": "//mouseOut",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dc56124-b059-4954-a4c7-c30847545863",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19b3ec34-30a5-463d-9335-5e28bd53d222",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[7]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f72972c-9c4c-4827-81df-38c9b39fa784",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.flex-col > .text-sm",
+      "targets": [
+        ["css=.form-group:nth-child(3) > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/p", "xpath:position"]
+      ],
+      "value": "This field is required"
+    }]
+  }, {
+    "id": "2e798d16-59b6-43c1-8486-6ddf2db67b4e",
+    "name": "1_TS004_TC003",
+    "commands": [{
+      "id": "61ea02d2-51fb-46ea-bf98-8302eb99d1de",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d23029d7-36f1-407d-9b5d-ca3e83730270",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0586f700-138b-4a74-bf13-ff14bc96ede5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc3c30d0-1300-4ec9-be2d-f44b296d7f91",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\large_image.jpg"
+    }, {
+      "id": "f4d3d72e-951d-4705-ae15-789aa732233d",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d92a1d5-4df3-4235-a6a1-954ce8f145f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40db7280-b529-4de6-9a51-062dd481f4a7",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Malolos City Fire Station"
+    }, {
+      "id": "9e89b5ef-939a-4e98-8ced-1e7cdb843b46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > .h-screen",
+      "targets": [
+        ["css=.w-full > .h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b1b7b4f-ccdb-4640-a3ce-52f589bdd0f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "09282269803"
+    }, {
+      "id": "7011da29-8e4e-4d28-a6f7-4d0031dda5a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfb8cb83-dcac-4daa-9e65-bee3d26b9a53",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "61faa715-71e0-48b1-ba97-5a24ac3855a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4786a52-0d42-428a-b47b-2db2d5ebccb3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.gap-2 > .text-sm",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "File size should be less than 10MB"
+    }]
+  }, {
+    "id": "21934725-8fa7-4847-bd60-6e7a043f29aa",
+    "name": "1_TS004_TC004",
+    "commands": [{
+      "id": "ae3955bf-0d2c-4f4a-9ff2-f85ad1b2b8fb",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d92cad5b-30db-4729-b26a-d20dd220d3fe",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8e9d1bc-f7a0-4294-aae3-221e385417fd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b95559e-872c-419d-a2f1-5ecdc22bbec7",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\invalid_image.gif"
+    }, {
+      "id": "8257abcc-b81a-4e3c-bcde-7d0d63f16fcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ce39254-9a9f-4e58-9287-db125ba3e767",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e2b4699-9823-439e-876b-1fe0ae62b6c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Malolos City Fire Station"
+    }, {
+      "id": "d4157839-8de4-40af-bf61-83574f24331b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > .h-screen",
+      "targets": [
+        ["css=.w-full > .h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed13e3a-a80f-4c64-aedd-9f10e1b1bf8b",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "09282269803"
+    }, {
+      "id": "2f31f844-a9fd-46d9-b65b-aee861730d1a",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de5bda86-9dce-40de-b7af-5c78673a65d5",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "3e844553-2d2f-4f77-8be5-dad4efca951d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42fc6795-79cb-4c52-8469-31335062c6cf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.gap-2 > .text-sm",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "Only PNG, JPEG, and JPG files are allowed"
+    }]
+  }, {
+    "id": "f562344c-8f3b-4131-9506-031d294dfa75",
+    "name": "1_TS004_TC006",
+    "commands": [{
+      "id": "84110e8b-daaf-4b8d-b56e-776e1b963ef4",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70b630d8-6a96-4b3f-96ed-74aba1701453",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "34de3674-6dbe-4d4b-bbce-1e7a3eda12dc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45efcd2-9632-4cfe-ae9b-1ad89e50b0fc",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\valid_image.jpg"
+    }, {
+      "id": "935ba372-b139-4503-9ee0-86c7c2c04eb1",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce844872-02f0-447a-bf4d-401d9d2be0b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fad3be40-cd6b-4d2a-8091-7bd5cfa83fa8",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Malolos City Fire Station"
+    }, {
+      "id": "36a57e68-3601-4235-9a5f-a105c1ddc54b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > .h-screen",
+      "targets": [
+        ["css=.w-full > .h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ed85b54-af65-4193-8a8d-865c69f9ea9d",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "09282269803"
+    }, {
+      "id": "7fd301b7-315f-4f7f-b36e-de821c1397b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9172bd3-d606-4681-9393-d2d49bce1994",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "81ec4d19-6331-4521-b2a4-bbbeac89d75d",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.form-group >.text-red-500",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7024c3a6-5607-4613-bee3-5bc5cb19d797",
+    "name": "1_TS004_TC005",
+    "commands": [{
+      "id": "f738913e-3d14-4bd8-96f5-1e892b3cee1f",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "310d615d-68c0-4218-b7b1-f83be268e894",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65a16ab2-0918-43b9-8c49-1fae48240d09",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a164067-a921-4771-805b-adfbfdd1a019",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\valid_image.jpg"
+    }, {
+      "id": "522018b2-dc67-451b-9030-a81c78257a39",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae34c9ed-7b21-4663-96ac-b65b8a4f96cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75ddfa9e-4649-4c03-b97d-5ed410eef1a9",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Malolos City Fire Station"
+    }, {
+      "id": "69099bdb-ffd4-47f8-b6c7-b9014320807d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > .h-screen",
+      "targets": [
+        ["css=.w-full > .h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2fdf788-5393-4d55-8d59-388d6097c62d",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "098"
+    }, {
+      "id": "ed8d78f1-3e59-41e8-afd8-0692191bbfd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "651277cb-5922-4a8f-8b92-fc8a6f1f9c20",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "ba57cc85-8ad2-4b7c-995f-b63f6fd42bb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63143253-f840-4801-8659-98ecdd6e6138",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.form-group > .text-red-500",
+      "targets": [
+        ["css=.form-group > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/p", "xpath:idRelative"],
+        ["xpath=//div[5]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Invalid contact number')]", "xpath:innerText"]
+      ],
+      "value": "Invalid contact number"
+    }]
+  }, {
+    "id": "4938dd23-1d4e-4525-9daa-89e095a445eb",
+    "name": "1_TS004_TC007",
+    "commands": [{
+      "id": "3da4fb7c-9615-4532-a1d3-faa0f1845553",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS004_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40674522-891f-4f12-b6a9-291db40a31d0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e3c9a6f-f1d5-484b-b68c-2eb0e03b6a1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div",
+      "targets": [
+        ["css=.top-0", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div/div", "xpath:idRelative"],
+        ["xpath=//form/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8e0e995-2854-43ac-ab56-7267122be0b3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[2]/form/div/div[1]/div/input",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\valid_image.jpg"
+    }, {
+      "id": "a73d906c-8c77-4fb4-ae18-293a75b08c34",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f82d4787-cfde-4a43-ac4f-35a4d7e88883",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "610618c4-3b49-4855-be70-5fdc24562cb1",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Malolos City Fire Station"
+    }, {
+      "id": "5eaa02ed-231a-4db8-a94f-484edb54002e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full > .h-screen",
+      "targets": [
+        ["css=.w-full > .h-screen", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f67033a7-abd5-423e-9941-e37964e50749",
+      "comment": "",
+      "command": "type",
+      "target": "id=contact",
+      "targets": [
+        ["id=contact", "id"],
+        ["name=contact", "name"],
+        ["css=#contact", "css:finder"],
+        ["xpath=//input[@id='contact']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "09282269803"
+    }, {
+      "id": "47d8b1b1-81bf-4ea3-8c3b-dcd59938b58d",
+      "comment": "",
+      "command": "click",
+      "target": "id=status",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[5]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f75eae1-e449-4b59-babb-eb579205b460",
+      "comment": "",
+      "command": "select",
+      "target": "id=status",
+      "targets": [],
+      "value": "label=Full"
+    }, {
+      "id": "c69d416e-b44e-45f6-ae9f-e399b9d8d105",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94020029-a891-43d4-9e40-53c7c6540c50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/form/div/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99d07bab-42bf-403c-8ddd-0b49efe6edeb",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "60000"
+    }, {
+      "id": "5a559d69-e7ea-46f5-9d38-2609916e3ef0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8797dc91-0211-4e18-909e-15a252d06e96",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body > div:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a908da4c-4cff-4e3b-9dbc-932fc37a3c99",
+    "name": "1_TS005_TC002",
+    "commands": [{
+      "id": "e8cd0672-560f-4b39-a0db-8b5b98eb1990",
+      "comment": "",
+      "command": "run",
+      "target": "employee_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2586ddca-ba50-4812-9e91-74f65804a766",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a0e927-dc60-44b6-bb99-4ef806e54d5b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]",
+      "targets": [
+        ["css=.border:nth-child(1) .pb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa1d242-1c0b-44fe-924c-32bcde762f9c",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/p",
+      "targets": [],
+      "value": "facilityName"
+    }, {
+      "id": "a05ba5e1-11b2-45c7-87c9-6842f00a9dce",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cb03fc7-07cb-4649-9b6a-7562dcfd6b31",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]",
+      "targets": [
+        ["css=.border:nth-child(1) .font-medium:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Malolos City Fire Station')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97a29cac-a998-42ac-aae0-95628fdda8a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/p",
+      "targets": [],
+      "value": "${facilityName}"
+    }]
+  }, {
+    "id": "5a27e278-f515-4029-b8cc-34340703a7d9",
+    "name": "1_TS005_TC003",
+    "commands": [{
+      "id": "ac4b10a6-5c28-477c-aa08-f88aa8fe6f18",
+      "comment": "",
+      "command": "run",
+      "target": "employee_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9890c75-9680-4665-ad5b-7f3345c659a9",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/facility-map",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5cf6ab0-5759-477f-bccd-3de34dbdc8c7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]",
+      "targets": [
+        ["css=.border:nth-child(1) .pb-3", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1e67576-eb47-41ed-9645-0125d7783e95",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56d5c393-1b03-4c03-97da-e4c23ff1fa0e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/div[1]/div[2]/button",
+      "targets": [
+        ["css=.py-1", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a49fca5-fd31-4839-b657-8335340346df",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//div[@id='root']/div/div[2]/div/div[2]/div/p",
+      "targets": [
+        ["css=.justify-between > .text-red-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Facility Details')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "54994ef0-2e96-4432-9283-156abdfea576",
+    "name": "suite_teardown",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "de0f5c11-0f41-4f32-b53b-5b4217aa0515",
+    "name": "suite_setup",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "cbc324b1-47d6-4d3d-ba7e-30986bdcc0a2",
+    "name": "test_suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "170c9eb9-454e-4e35-a7d4-c9af203168fa",
+    "name": "001_TS003",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec28c119-13eb-433f-ab3b-f1c0018d6d0a", "a9c79d0e-9688-40ed-8858-20314933eeaf", "03204c65-3427-440e-bc82-c100df788470", "e93af068-ed48-4724-942e-052209f1a228", "bbc8806a-c81b-4f10-9f17-34697d5a200f", "637f5b9a-65e6-4b42-a56e-fa3815306c9d", "7b38ef97-1ab0-4218-958e-a672795c9bd9"]
+  }, {
+    "id": "bf62554d-bae8-4078-9d6d-d229c163cf06",
+    "name": "001_TS004",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["08c575bd-73a2-4869-80b5-5e554f798161", "5c18541e-e788-43d8-8596-390974faadbc", "2e798d16-59b6-43c1-8486-6ddf2db67b4e", "21934725-8fa7-4847-bd60-6e7a043f29aa", "7024c3a6-5607-4613-bee3-5bc5cb19d797", "f562344c-8f3b-4131-9506-031d294dfa75", "4938dd23-1d4e-4525-9daa-89e095a445eb"]
+  }, {
+    "id": "0231c82d-64f9-49f0-9ae3-5d34d7661f7a",
+    "name": "001_TS005",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9e883c3-89b8-4081-895c-05e8168ee8d4", "a908da4c-4cff-4e3b-9dbc-932fc37a3c99", "5a27e278-f515-4029-b8cc-34340703a7d9"]
+  }],
+  "urls": ["https://sagip-automation.vercel.app/"],
+  "plugins": []
+}

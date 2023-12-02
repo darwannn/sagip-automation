@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231202 21:19:30.229" rpa="false" schemaversion="4">
+<suite id="s1" name="001 TS044" source="C:\Users\Darwin\Desktop\SAGIP Automation Testing\Robot Framework\test_suite\Wellness Check Survey Module\001_TS044.robot">
+<kw name="Employee Login" library="login" type="SETUP">
+<kw name="Login" library="login">
+<arg>employee@sagip.live</arg>
+<arg>Sagip.00</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231202 21:19:30.567" level="INFO">Opening browser 'Chrome' to base url 'https://sagip-automation.vercel.app/'.</msg>
+<status status="PASS" starttime="20231202 21:19:30.566" endtime="20231202 21:19:35.418"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231202 21:19:35.418" endtime="20231202 21:19:35.568"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231202 21:19:35.569" level="INFO">Opening url 'https://sagip-automation.vercel.app/'</msg>
+<status status="PASS" starttime="20231202 21:19:35.569" endtime="20231202 21:19:37.085"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
+<arg>10 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231202 21:19:37.086" endtime="20231202 21:19:37.164"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:37.166" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20231202 21:19:37.164" endtime="20231202 21:19:37.356"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=identifier</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:37.358" level="INFO">Clicking element 'id=identifier'.</msg>
+<status status="PASS" starttime="20231202 21:19:37.356" endtime="20231202 21:19:37.504"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:identifier</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:37.506" level="INFO">Typing text 'employee@sagip.live' into text field 'id:identifier'.</msg>
+<status status="PASS" starttime="20231202 21:19:37.504" endtime="20231202 21:19:38.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=password</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:38.017" level="INFO">Clicking element 'id=password'.</msg>
+<status status="PASS" starttime="20231202 21:19:38.016" endtime="20231202 21:19:38.214"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:38.216" level="INFO">Typing text 'Sagip.00' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231202 21:19:38.214" endtime="20231202 21:19:38.335"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[1]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:38.336" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[1]/button'.</msg>
+<status status="PASS" starttime="20231202 21:19:38.335" endtime="20231202 21:19:38.419"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
+<arg>60 seconds</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231202 21:19:38.419" endtime="20231202 21:19:40.596"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231202 21:19:40.625" level="INFO">Element 'xpath=//*[@id="root"]/div[1]/div[2]/div/header/h1' is displayed.</msg>
+<status status="PASS" starttime="20231202 21:19:40.596" endtime="20231202 21:19:40.625"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:30.566" endtime="20231202 21:19:40.625"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:30.566" endtime="20231202 21:19:40.625"/>
+</kw>
+<test id="s1-t1" name="1_TS044_TC001" line="31">
+<kw name="Click Wellness Check">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://sagip-automation.vercel.app/admin/wellness-check</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231202 21:19:40.627" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/wellness-check'</msg>
+<status status="PASS" starttime="20231202 21:19:40.627" endtime="20231202 21:19:41.318"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231202 21:19:41.318" endtime="20231202 21:19:41.338"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20231202 21:19:41.352" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="08fff68ba1858000d461d15099e6a530", element="BECC89FD76D706AA04F3F4A2181C2CE9_element_49")&gt;</msg>
+<status status="PASS" starttime="20231202 21:19:41.338" endtime="20231202 21:19:41.352"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>'${element}'=='None'</arg>
+<arg>Wellness Check Present</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<msg timestamp="20231202 21:19:41.353" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<kw name="Wellness Check Present">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:41.354" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[2]/div'.</msg>
+<status status="PASS" starttime="20231202 21:19:41.354" endtime="20231202 21:19:41.451"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231202 21:19:41.451" endtime="20231202 21:19:41.494"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231202 21:19:41.522" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div' is displayed.</msg>
+<status status="PASS" starttime="20231202 21:19:41.494" endtime="20231202 21:19:41.523"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:41.354" endtime="20231202 21:19:41.523"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:41.353" endtime="20231202 21:19:41.523"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:40.626" endtime="20231202 21:19:41.523"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231202 21:19:41.523" endtime="20231202 21:19:42.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:42.176" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]'.</msg>
+<status status="PASS" starttime="20231202 21:19:42.176" endtime="20231202 21:19:42.244"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[5]/span/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20231202 21:19:47.553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231202 21:19:47.553" level="FAIL">Element 'xpath=/html/body/div[3]/div/ul/li[5]/span/div' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20231202 21:19:42.245" endtime="20231202 21:19:47.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.557" endtime="20231202 21:19:47.557"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.558" endtime="20231202 21:19:47.558"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.558" endtime="20231202 21:19:47.559"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.559" endtime="20231202 21:19:47.559"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radix-:rh:"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.559" endtime="20231202 21:19:47.560"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radix-:rh:"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:47.560" endtime="20231202 21:19:47.560"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:40.625" endtime="20231202 21:19:47.560">Element 'xpath=/html/body/div[3]/div/ul/li[5]/span/div' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="1_TS044_TC002" line="43">
+<kw name="Click Wellness Check">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://sagip-automation.vercel.app/admin/wellness-check</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231202 21:19:47.562" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/wellness-check'</msg>
+<status status="PASS" starttime="20231202 21:19:47.562" endtime="20231202 21:19:48.066"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231202 21:19:48.066" endtime="20231202 21:19:48.084"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<msg timestamp="20231202 21:19:48.098" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="08fff68ba1858000d461d15099e6a530", element="721DE8DB1D32AE2970F439CB12C5DC2B_element_65")&gt;</msg>
+<status status="PASS" starttime="20231202 21:19:48.084" endtime="20231202 21:19:48.098"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>'${element}'=='None'</arg>
+<arg>Wellness Check Present</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<msg timestamp="20231202 21:19:48.098" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<kw name="Wellness Check Present">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:48.101" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[2]/div'.</msg>
+<status status="PASS" starttime="20231202 21:19:48.101" endtime="20231202 21:19:48.168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231202 21:19:48.170" endtime="20231202 21:19:48.226"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20231202 21:19:48.266" level="INFO">Element '//*[@id="root"]/div[1]/div[2]/div' is displayed.</msg>
+<status status="PASS" starttime="20231202 21:19:48.226" endtime="20231202 21:19:48.266"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:48.099" endtime="20231202 21:19:48.266"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:48.098" endtime="20231202 21:19:48.266"/>
+</kw>
+<status status="PASS" starttime="20231202 21:19:47.562" endtime="20231202 21:19:48.267"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231202 21:19:48.267" endtime="20231202 21:19:48.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231202 21:19:48.728" level="INFO">Clicking element 'xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]'.</msg>
+<status status="PASS" starttime="20231202 21:19:48.727" endtime="20231202 21:19:48.807"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[5]/span/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<msg timestamp="20231202 21:19:52.671" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.675" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<status status="FAIL" starttime="20231202 21:19:48.808" endtime="20231202 21:19:52.690"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.691" endtime="20231202 21:19:52.691"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.692" endtime="20231202 21:19:52.692"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.693" endtime="20231202 21:19:52.693"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.694" endtime="20231202 21:19:52.694"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radix-:rh:"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.695" endtime="20231202 21:19:52.695"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="radix-:rh:"]/form/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.695" endtime="20231202 21:19:52.696"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=.Toastify__toast--success</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.696" endtime="20231202 21:19:52.697"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css=.Toastify__toast--success</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.697" endtime="20231202 21:19:52.697"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:47.561" endtime="20231202 21:19:52.698">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</status>
+</test>
+<test id="s1-t3" name="1_TS044_TC003" line="59">
+<kw name="Click Wellness Check">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://sagip-automation.vercel.app/admin/wellness-check</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231202 21:19:52.706" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/wellness-check'</msg>
+<msg timestamp="20231202 21:19:52.736" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.747" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<status status="FAIL" starttime="20231202 21:19:52.705" endtime="20231202 21:19:52.790"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.793" endtime="20231202 21:19:52.793"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.793" endtime="20231202 21:19:52.793"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>'${element}'=='None'</arg>
+<arg>Wellness Check Present</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<msg timestamp="20231202 21:19:52.794" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20231202 21:19:52.794" endtime="20231202 21:19:52.795"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:52.705" endtime="20231202 21:19:52.796"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.797" endtime="20231202 21:19:52.797"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.798" endtime="20231202 21:19:52.798"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[5]/span/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.801" endtime="20231202 21:19:52.801"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.804" endtime="20231202 21:19:52.805"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.805" endtime="20231202 21:19:52.805"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.806" endtime="20231202 21:19:52.806"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.820" endtime="20231202 21:19:52.821"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//h2[contains(text(), 'Publish Wellness Check')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.839" endtime="20231202 21:19:52.839"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="title"]</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.839" endtime="20231202 21:19:52.840"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn-primary float-right']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.840" endtime="20231202 21:19:52.841"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=span.text-red-500</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.844" endtime="20231202 21:19:52.845"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${error_text}</var>
+<arg>css=span.text-red-500</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.845" endtime="20231202 21:19:52.846"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${error_text}</arg>
+<arg>Title is required</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.846" endtime="20231202 21:19:52.846"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:52.703" endtime="20231202 21:19:52.847">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</status>
+</test>
+<test id="s1-t4" name="1_TS044_TC004" line="75">
+<kw name="Click Wellness Check">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://sagip-automation.vercel.app/admin/wellness-check</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231202 21:19:52.862" level="INFO">Opening url 'https://sagip-automation.vercel.app/admin/wellness-check'</msg>
+<msg timestamp="20231202 21:19:52.874" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.879" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<status status="FAIL" starttime="20231202 21:19:52.862" endtime="20231202 21:19:52.882"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.883" endtime="20231202 21:19:52.883"/>
+</kw>
+<kw name="Get WebElement" library="SeleniumLibrary">
+<var>${element}</var>
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.883" endtime="20231202 21:19:52.883"/>
+</kw>
+<kw name="Run Keyword Unless" library="BuiltIn">
+<arg>'${element}'=='None'</arg>
+<arg>Wellness Check Present</arg>
+<doc>*DEPRECATED since RF 5.0. Use Native IF/ELSE or `Run Keyword If` instead.*</doc>
+<msg timestamp="20231202 21:19:52.884" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<status status="NOT RUN" starttime="20231202 21:19:52.884" endtime="20231202 21:19:52.885"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:52.861" endtime="20231202 21:19:52.886"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.886" endtime="20231202 21:19:52.886"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[4]/div/table/tbody/tr[1]/td[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.887" endtime="20231202 21:19:52.887"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[5]/span/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.887" endtime="20231202 21:19:52.887"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[3]/div/ul/li[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.888" endtime="20231202 21:19:52.888"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.889" endtime="20231202 21:19:52.889"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.889" endtime="20231202 21:19:52.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="root"]/div[1]/div[2]/div/div[1]/div[2]/div[2]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.898" endtime="20231202 21:19:52.899"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//h2[contains(text(), 'Publish Wellness Check')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.899" endtime="20231202 21:19:52.899"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="title"]</arg>
+<arg>Smoke</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.900" endtime="20231202 21:19:52.900"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="endDate"]</arg>
+<arg>11/12/2023</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.901" endtime="20231202 21:19:52.901"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${DROPDOWN}</arg>
+<arg>${OPTION}</arg>
+<arg>Earthquake</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.901" endtime="20231202 21:19:52.901"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn-primary float-right']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.901" endtime="20231202 21:19:52.901"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css=.Toastify__toast--success</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.902" endtime="20231202 21:19:52.902"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>css=.Toastify__toast--success</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20231202 21:19:52.902" endtime="20231202 21:19:52.902"/>
+</kw>
+<status status="FAIL" starttime="20231202 21:19:52.859" endtime="20231202 21:19:52.903">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20231202 21:19:30.231" endtime="20231202 21:19:52.916"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="001 TS044">001 TS044</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231202 21:19:41.353" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20231202 21:19:48.098" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20231202 21:19:52.671" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.736" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.794" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+<msg timestamp="20231202 21:19:52.874" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Stacktrace:
+	GetHandleVerifier [0x00007FF603BB82B2+55298]
+	(No symbol) [0x00007FF603B25E02]
+	(No symbol) [0x00007FF6039E05AB]
+	(No symbol) [0x00007FF6039C0038]
+	(No symbol) [0x00007FF603A46BC7]
+	(No symbol) [0x00007FF603A5A15F]
+	(No symbol) [0x00007FF603A41E83]
+	(No symbol) [0x00007FF603A1670A]
+	(No symbol) [0x00007FF603A17964]
+	GetHandleVerifier [0x00007FF603F30AAB+3694587]
+	GetHandleVerifier [0x00007FF603F8728E+4048862]
+	GetHandleVerifier [0x00007FF603F7F173+4015811]
+	GetHandleVerifier [0x00007FF603C547D6+695590]
+	(No symbol) [0x00007FF603B30CE8]
+	(No symbol) [0x00007FF603B2CF34]
+	(No symbol) [0x00007FF603B2D062]
+	(No symbol) [0x00007FF603B1D3A3]
+	BaseThreadInitThunk [0x00007FFE8154257D+29]
+	RtlUserThreadStart [0x00007FFE8294AA58+40]
+</msg>
+<msg timestamp="20231202 21:19:52.884" level="WARN">Keyword 'BuiltIn.Run Keyword Unless' is deprecated. </msg>
+</errors>
+</robot>

@@ -1,0 +1,1499 @@
+{
+  "id": "4a457a18-fb3b-4dd2-a634-9b3b56c1af34",
+  "version": "2.0",
+  "name": "SAGIP",
+  "url": "https://sagip-automation.vercel.app/",
+  "tests": [{
+    "id": "9c57ad44-b1fa-4853-b290-2caf091a5c6a",
+    "name": "admin_login",
+    "commands": [{
+      "id": "e808c1f5-3cee-4ec9-81ad-da73bc39a4d1",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0fdcec5-3a34-4247-8782-faf1387d25be",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector('h1.text-2xl.font-bold.text-primary-500') !== null",
+      "targets": [],
+      "value": "elementExists"
+    }, {
+      "id": "d4d0861f-45ae-48e8-b0b8-8266bc8c468d",
+      "comment": "",
+      "command": "if",
+      "target": "${elementExists} == false",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecddc22c-28c3-42fd-ae50-90f6eaaf1792",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b13c7d08-d944-46fe-8875-83d9bad755b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3a2020b-54e5-4ff3-bd5f-b0648c1a955e",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d364acc-6d7a-4df3-a02a-f5b31fde1c37",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@sagip.live"
+    }, {
+      "id": "89d0dd60-9222-46e8-a464-1e115428a692",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "5bb62481-eb10-4a94-89ef-0aca4c1b1469",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a293750a-c55b-4491-ab82-f0c433766358",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/header/h1",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7a373c71-ab37-4372-abd2-dd6b408484ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/header/h1",
+      "targets": [],
+      "value": "Dashboard"
+    }, {
+      "id": "3d7c1f75-8290-4837-973f-c1b24d35ddac",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9540ce25-a077-4a8a-8ba8-85442a5e65c9",
+    "name": "1_TS025_TC001",
+    "commands": [{
+      "id": "99b584b0-e46f-41f6-beb6-024da5d724c2",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91ae3343-964a-4372-8984-32190c1569c1",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccd374b6-8047-4a73-a804-b31ded3d3820",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center",
+      "targets": [
+        ["css=.text-center", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create New Team')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfcb6b53-6412-4927-b0d1-bb40f4f94fc6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=teamName",
+      "targets": [
+        ["id=teamName", "id"],
+        ["name=teamName", "name"],
+        ["css=#teamName", "css:finder"],
+        ["xpath=//input[@id='teamName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "92de3b4d-fee2-434c-967b-d082eb8c3b83",
+    "name": "1_TS025_TC002",
+    "commands": [{
+      "id": "97e351ba-9958-4162-a014-cd16560998c3",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS025_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01fa362d-b594-4a9f-bf6b-82e4f38bb7d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=teamName",
+      "targets": [
+        ["id=teamName", "id"],
+        ["name=teamName", "name"],
+        ["css=#teamName", "css:finder"],
+        ["xpath=//input[@id='teamName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Ambu 7"
+    }, {
+      "id": "9f9eae55-30ac-4c7f-a5c5-274aacae3817",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=form > .text-red-500",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5232a14a-39fc-4858-8b24-3ad09c377f0f",
+    "name": "1_TS025_TC003",
+    "commands": [{
+      "id": "533f73bf-d81e-41d2-a87d-38b36e31e615",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS025_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3590def-7520-4c61-a669-8a274119cf4a",
+      "comment": "",
+      "command": "type",
+      "target": "id=teamName",
+      "targets": [
+        ["id=teamName", "id"],
+        ["name=teamName", "name"],
+        ["css=#teamName", "css:finder"],
+        ["xpath=//input[@id='teamName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f53b4e45-28ca-49d2-93fd-b5195d197eca",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[1]/div[2]/form/div[2]/button[1]",
+      "targets": [
+        ["css=.p-10", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a41dd32d-4ed2-4c95-84bc-f053ad40110d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=teamName",
+      "targets": [
+        ["id=teamName", "id"],
+        ["name=teamName", "name"],
+        ["css=#teamName", "css:finder"],
+        ["xpath=//input[@id='teamName']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6f8ce50a-2e8c-449c-b0a5-f7de32238cb5",
+    "name": "1_TS025_TC004",
+    "commands": [{
+      "id": "050c66a5-15d2-4904-a669-45e0bed3d3cc",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS025_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01ac60f1-015b-4ac2-922e-6814b66f9038",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Team')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c95c37e-43bb-43d7-a73d-b9a74a2cfe05",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.\\[\\&\\>svg\\~\\*\\]\\3Apl-7",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "61d31b48-8c4c-4f98-b9f2-7c0572d1a464",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.\\[\\&\\>svg\\~\\*\\]\\3Apl-7",
+      "targets": [
+        ["css=.\\[\\&\\>svg\\~\\*\\]\\3Apl-7", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "112c6ed9-ecea-4856-bd06-65e29acac812",
+    "name": "1_TS025_TC005",
+    "commands": [{
+      "id": "08057537-02e1-4627-9a06-099888cd6263",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS025_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc6a2585-14a3-4daa-ae43-ef0f005e6983",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-2xl > svg",
+      "targets": [
+        ["css=.text-2xl > svg", "css:finder"]
+      ],
+      "value": "Ambu 7"
+    }, {
+      "id": "d00f7945-d505-42f6-8af6-a89f3f644f46",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.\\[\\&\\>svg\\~\\*\\]\\3Apl-7",
+      "targets": [
+        ["css=.\\[\\&\\>svg\\~\\*\\]\\3Apl-7", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5b67f640-e77a-44b5-826d-75a79451a7eb",
+    "name": "1_TS028_TC001",
+    "commands": [{
+      "id": "3db48ded-6ab7-475f-92e2-afd2cc6a85d8",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78063b30-a0f4-4a53-afc7-78e6ab37b758",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36555ac9-9c1b-4d17-9120-e65f25ddf6f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(6) > .flex",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92c6b1a8-b77e-4421-89da-396df80a80d4",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c8f1bbf-2c89-47d9-b6c3-3a799398c246",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5831c063-ba58-45a0-b243-13a10a05de9a",
+    "name": "1_TS028_TC002",
+    "commands": [{
+      "id": "b53bfed6-0a2b-49d7-b533-0fb27a12aaa6",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36f43e35-5306-4f67-a522-98196067e847",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "441d08dd-3855-41c0-859b-976f64f21f6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(6) > .flex",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c77291f9-2f16-461b-a181-b59525075273",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31e92866-18b3-4272-8d56-cd083494a31d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbdc4db-a339-460f-bdbe-ee77be675b16",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.bg-white:nth-child(6) > .flex",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0e797d4e-c675-4539-a763-1a010125065d",
+    "name": "1_TS028_TC003",
+    "commands": [{
+      "id": "4fa27d1f-7002-474f-9bea-fcf92e2ad262",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c4332bf-f149-42e1-bec7-07450f318b50",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46880e03-38dd-483e-b53c-f8a4b55e567b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(6) > .flex",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3522946c-8be9-4e94-b488-7d01ba1a27f9",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe1a9e6-2e12-4caf-bf59-25d473623f3e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary",
+      "targets": [
+        ["css=.btn-secondary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b53bae7-3457-4933-846f-645c4e134cdc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "6151308a-fea4-4259-8346-72ae8e6f6956",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34c77b7e-1d48-4e6c-ba50-2a044075ab35",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6eaab5b9-805e-421c-89c8-a037caa99f51",
+    "name": "1_TS029_TC001",
+    "commands": [{
+      "id": "8f4ffd6a-9231-4a55-917e-480a637caa60",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9b0e59c-7ad6-46c1-aaa2-73f8e6a36488",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b5ce571-c032-4eec-a33a-4faa586beb81",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11cc19a4-67af-49b2-9aeb-ca732944cd2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary-outline",
+      "targets": [
+        ["css=.btn-secondary-outline", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'New Team Rotation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "30db326d-3569-4f70-b2b0-cc2fb579a791",
+    "name": "1_TS029_TC002",
+    "commands": [{
+      "id": "ea306447-1c54-43ec-a590-29b5503af350",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d54e5e2-be0f-452a-b9ec-5b684d398c43",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43cfe208-f49a-4fcc-a7e9-8ca53b1342fe",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ee3cbc2-be01-4df9-ba1c-722c7a22123c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary-outline",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f5eb614-7d02-4ab9-8514-3494fc107e9d",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//*[@id=\"root\"]/div[1]/div[2]/div/div[1]/div[2]/div/div/div[3]/div/svg",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "02c77125-2cc7-4fe9-9a09-af293799b499",
+    "name": "1_TS029_TC003",
+    "commands": [{
+      "id": "089b969b-8742-4cd1-883c-9a6b1e5a33fc",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3ef6cff-f643-4431-bb98-3b6265e9e59a",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd33ada7-12ac-4d51-a855-03f6a4daf191",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0591a18d-6444-4d90-a444-2076caee6217",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary-outline",
+      "targets": [
+        ["css=.bg-white:nth-child(6) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31567ded-7417-45f6-bfcb-51e02c1dfd8c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "da87cdfc-ec33-4cf1-a84f-7b521a18965b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de3760a6-2cef-432d-8245-44c875d0bfa6",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.text-yellow-500 > path",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "28fca175-c5ec-478a-ab40-27fe5745240a",
+    "name": "1_TS027_TC001",
+    "commands": [{
+      "id": "6f223e6e-c02c-4d5a-9650-d273b4181cd6",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a2d244b-88e0-41bb-b468-d1971fc0cba6",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08d88215-851b-404d-bfa0-cac7426921ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) > .flex",
+      "targets": [
+        ["css=.border:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fff9e3e-4a6a-4e8a-aaf8-b7946c44dded",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.text-blue-500",
+      "targets": [
+        ["css=.text-blue-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ambu 1')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d058363b-859c-4de0-87ff-ec5d073ab316",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.text-blue-500",
+      "targets": [
+        ["css=.text-blue-500", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ambu 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e2e728c8-071b-42ae-8062-a094113285d3",
+    "name": "1_TS027_TC002",
+    "commands": [{
+      "id": "1882bfad-1897-4997-8f23-26cfd0122e56",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73e54cd0-4014-48ac-94b3-6e6d4129a759",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add Responder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca0ddf54-fe6b-4232-8b45-5e80d6b32de1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.form-input",
+      "targets": [
+        ["css=.form-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3e16b356-15fb-47c6-a0d5-c521765fa501",
+    "name": "1_TS027_TC005",
+    "commands": [{
+      "id": "be13bfab-d26d-44f3-a96f-6197cff31c1d",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1342a6de-7386-4e3b-a649-e5e33c79a15a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-input",
+      "targets": [
+        ["css=.form-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45614fa3-2721-4461-a536-3c8b9e265511",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-gray-300:nth-child(1)",
+      "targets": [
+        ["css=.hover\\3A bg-gray-300:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0368ed6d-ed2f-4b59-9bd6-bb92ddc3cad7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-8mmkcg",
+      "targets": [
+        ["css=.css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed93a870-10b2-483f-9f83-d152697f7563",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-2-option-1",
+      "targets": [
+        ["id=react-select-2-option-0", "id"],
+        ["css=#react-select-2-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-2-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-2-listbox']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "137a5c92-10c7-4811-b763-dc9cef57bf1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-8mmkcg",
+      "targets": [
+        ["css=.css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9efe867f-e229-4213-8be4-255a0edfcbad",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5c5b194-4632-4293-8391-4c6479a12753",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(4)",
+      "targets": [
+        ["css=.btn-primary:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a859d1a-025e-4b4b-8a47-1022380295bf",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "63d7f775-4333-4637-b3b1-5c1a406a0350",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1dadc6e4-82b0-4fa0-84b2-ca39d6cded37",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "23a166ea-f719-4fe5-ba4c-400cdd904477",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6d882ad1-0b08-4899-8a56-2e9977260f74",
+    "name": "1_TS027_TC007",
+    "commands": [{
+      "id": "9df6c3bb-8dba-4b04-b9fa-b8a04ffdf875",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56ce0b21-ed91-404b-88b9-0184b7209b14",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-8mmkcg",
+      "targets": [
+        ["css=.css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "306cf3ab-20fc-4771-b88b-ba5be65ca57f",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-2-option-1",
+      "targets": [
+        ["id=react-select-2-option-0", "id"],
+        ["css=#react-select-2-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-2-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-2-listbox']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5b5f983-c8b1-4b08-a74b-2505b820bf28",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(4)",
+      "targets": [
+        ["css=.btn-primary:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c2cc6b41-ead3-4172-9d79-56b5c1234bf1",
+    "name": "1_TS027_TC003",
+    "commands": [{
+      "id": "d7ea2ee0-cac3-440e-b4bc-b73a7390b2a6",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f5106ff-2d3d-4e99-88c1-a3dd23a614c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bg-white:nth-child(1) > .flex > .font-semibold",
+      "targets": [
+        ["css=.bg-white:nth-child(1) > .flex > .font-semibold", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Ambu 1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaddda5a-738d-45be-a96e-995c592e2048",
+      "comment": "",
+      "command": "click",
+      "target": "css=.relative > .flex .ant-dropdown-trigger",
+      "targets": [
+        ["css=.relative > .flex .ant-dropdown-trigger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9793e4cc-1b45-4cd4-991a-2d80314194fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left",
+      "targets": [
+        ["css=.text-left", "css:finder"],
+        ["xpath=//button/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Edit Assignment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c500ac29-b02f-4d6c-b58e-bd525126d764",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ecc2751-5d8d-4fe6-a8cd-ae74183b1539",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-secondary-500",
+      "targets": [
+        ["css=.text-secondary-500", "css:finder"],
+        ["xpath=//div[@id='radix-:r18:']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unassign to Current Team')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ba40d99-a137-421d-81e8-074b6b5c8da1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.text-gray-700",
+      "targets": [
+        ["css=.text-gray-700", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[3]/div/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'No leader assigned for this team.')]", "xpath:innerText"]
+      ],
+      "value": "No leader assigned for this team."
+    }]
+  }, {
+    "id": "b86c8deb-5f6f-4a52-ad44-c692a6227bee",
+    "name": "1_TS027_TC004",
+    "commands": [{
+      "id": "04d0645c-cadc-41e0-91a0-f4fb703f646a",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC001",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "996db169-79fa-4d1b-9028-ea48efddc418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gap-5:nth-child(1)",
+      "targets": [
+        ["css=.gap-5:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de973dd3-2d0a-4a55-9007-fc1cfa8d0228",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex:nth-child(1) > div > .flex > .ant-dropdown-trigger",
+      "targets": [
+        ["css=.flex:nth-child(1) > div > .flex > .ant-dropdown-trigger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d697925-f7db-456d-9699-d98ebb6e6788",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-left",
+      "targets": [
+        ["css=.text-left", "css:finder"],
+        ["xpath=//button/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Edit Assignment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee94c3eb-2461-4aed-b389-7ca5c58e3520",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-15lsz6c-indicatorContainer > .css-8mmkcg",
+      "targets": [
+        ["css=.css-15lsz6c-indicatorContainer > .css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c539522-fe22-4a92-bd67-0fb5bd24cc8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-15lsz6c-indicatorContainer > .css-8mmkcg",
+      "targets": [
+        ["css=.css-15lsz6c-indicatorContainer > .css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a5c15fd-a630-492a-a443-53e84716fef2",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2886540-5937-42e7-91fd-4676f0343df6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-secondary-500",
+      "targets": [
+        ["css=.text-secondary-500", "css:finder"],
+        ["xpath=//div[@id='radix-:r1q:']/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unassign to Current Team')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d48e1678-6f28-4ce4-beca-6d6915b3f331",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to unassign this responder?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9ef3f7d-2636-478a-8a92-e5385d27d694",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e91a40-7dc0-43b8-90b2-f51bd0cb1999",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7681724d-af08-49d6-9f21-d8236f1e7375",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4defb832-4fee-4931-a3c1-3668515d0b63",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "9520f39d-2614-4c83-83ea-ba457735832e",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7d684cd6-c89c-4efe-9554-254e67b8248a",
+    "name": "1_TS027_TC008",
+    "commands": [{
+      "id": "38cc965d-3ffb-4989-8f95-eabc8b735638",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9e54de5-6908-48e0-886e-b1a5af2b9fa4",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.form-input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45ceb175-9611-4b68-bb15-8ce905b25468",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(4)",
+      "targets": [
+        ["css=.btn-primary:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e35d08ad-f215-4264-802a-680daf89642b",
+    "name": "1_TS027_TC006",
+    "commands": [{
+      "id": "f3933650-b915-474b-b7fd-62734348feb3",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa5e6a57-abc3-4916-80ee-e5d716159010",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-input",
+      "targets": [
+        ["css=.form-input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b07452e1-79b7-4ed4-9fdc-8468ea638d97",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover\\3A bg-gray-300:nth-child(1)",
+      "targets": [
+        ["css=.hover\\3A bg-gray-300:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4306dfa6-82ac-4991-9e20-9ef2e293735c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-8mmkcg",
+      "targets": [
+        ["css=.css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db1fd0b-0940-4c42-bc18-3fcdb2ebf1fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-select-2-option-0",
+      "targets": [
+        ["id=react-select-2-option-0", "id"],
+        ["css=#react-select-2-option-0", "css:finder"],
+        ["xpath=//div[@id='react-select-2-option-0']", "xpath:attributes"],
+        ["xpath=//div[@id='react-select-2-listbox']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35eb4195-6e59-453d-b6b6-1cc2e00b38eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.css-8mmkcg",
+      "targets": [
+        ["css=.css-8mmkcg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "150e8213-fec6-4f8f-a5cc-5734bdfca139",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(4)",
+      "targets": [
+        ["css=.btn-primary:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88c57816-b09a-4ac9-95f9-5b75a8b6f29e",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "2dc57d51-09a2-49bf-83a3-385b52c66686",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ce7943a-fce2-478d-a9ab-c7006ad30497",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "795a67da-e898-4747-9342-98eacd2ea794",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "397644cd-28ae-4554-b867-801024c1ea0c",
+    "name": "1_TS027_TC009",
+    "commands": [{
+      "id": "3a15610a-b9f3-4285-823b-fef7530720ae",
+      "comment": "",
+      "command": "run",
+      "target": "1_TS027_TC002",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11ce12d3-bd4f-43e0-94fc-508dfaf9a529",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.ant-dropdown-trigger",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d80f150-ca1f-460e-a9b8-090ca3f0dda7",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.text-left",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "002937b9-9bcd-4b04-8349-66b8733afcca",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.css-15lsz6c-indicatorContainer",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "717fbad8-57b7-41ac-b2a1-a73cb31ee337",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "id=react-select-2-option-0",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "215c2d3e-bce4-44b5-9516-cf48352dd15b",
+      "comment": "",
+      "command": "//click",
+      "target": "id=react-select-2-option-1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb4ba026-02f4-40b8-8fdb-e637f8e5d084",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.css-15lsz6c-indicatorContainer > .css-8mmkcg",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fb3e4d0-3e4d-4789-9c7c-1dde80acc897",
+      "comment": "",
+      "command": "//click",
+      "target": "id=react-select-3-option-1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "680c7b56-d269-4025-aa3e-20d1ef984a78",
+      "comment": "",
+      "command": "//click",
+      "target": "css=.btn-primary:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a44ed894-f7d7-4de5-b77a-2aabc2e5eec0",
+      "comment": "",
+      "command": "//mouseOver",
+      "target": "css=.btn-primary:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9ad44f9-4427-4240-8cfe-eb1c011ae041",
+      "comment": "",
+      "command": "//mouseOut",
+      "target": "css=.btn-primary:nth-child(3)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae0f451e-982c-4648-b915-861de539b6c9",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "42152244-5b33-422b-853d-2aba397fb159",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ecf9eb53-9633-4abb-a62f-6afe7addab03",
+    "name": "1_TS027_TC010",
+    "commands": [{
+      "id": "0764e032-1d3d-4229-99ff-df5826a4701c",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a04e339-d071-4e5f-9699-61571f28f5d7",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4729acd6-0eb2-44e6-86eb-08f72a43c4bd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) > .flex",
+      "targets": [
+        ["css=.border:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a98172d-e514-438d-87ff-98e92056cf95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-gray-400 path:nth-child(2)",
+      "targets": [
+        ["css=.text-gray-400 path:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8feec1cd-4ec7-4a1e-a3aa-aa0afce3e282",
+    "name": "1_TS027_TC011",
+    "commands": [{
+      "id": "0c9aeccb-e58e-4796-960e-50254c9db87e",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09865398-a3f2-42c5-9124-6f645ceca4c3",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f94f2d66-30e2-467f-bebc-45204ad43457",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) > .flex",
+      "targets": [
+        ["css=.border:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5da8e442-eb05-4799-97f4-fc4b50a6adb5",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0130b326-1dbe-4551-9deb-a3d9c584b574",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-gray-400 > svg",
+      "targets": [
+        ["css=.text-gray-400 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3acb364c-9627-4ed4-9ff5-182cb2ead9b2",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.my-2:nth-child(1) > .text-gray-700",
+      "targets": [],
+      "value": "No members assigned for this team."
+    }]
+  }, {
+    "id": "9883ffea-1b56-457e-8b2a-dac7fb77d832",
+    "name": "1_TS027_TC012",
+    "commands": [{
+      "id": "5171d5c4-d229-42fb-a811-5cc8f7067b32",
+      "comment": "",
+      "command": "run",
+      "target": "admin_login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1ea954e-a272-46ae-a5e4-a719b091128d",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app/admin/teams",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b53b6834-5f81-430e-8fd1-6144d1f8bdb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border:nth-child(1) > .flex",
+      "targets": [
+        ["css=.border:nth-child(1) > .flex", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/div[2]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f869191-ee8d-478b-8359-fa4752f69d09",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1f4867fe-868e-4664-a8c5-01d9dcf1b1cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-gray-400 > svg",
+      "targets": [
+        ["css=.text-gray-400 > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad46f966-44a0-4fb6-8b0c-7aa29aefa09c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "004b68c2-6f8a-4303-860c-2216a5229a06",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.Toastify__toast--success",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3be31635-fd28-4887-9d5d-56764568db5d",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "fa0bcecb-b80d-4dca-8901-d9f17577d528",
+      "comment": "",
+      "command": "//assertElementPresent",
+      "target": "css=.Toastify__toast-body",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cbc324b1-47d6-4d3d-ba7e-30986bdcc0a2",
+    "name": "001_TS025",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["112c6ed9-ecea-4856-bd06-65e29acac812", "6f8ce50a-2e8c-449c-b0a5-f7de32238cb5", "5232a14a-39fc-4858-8b24-3ad09c377f0f", "92de3b4d-fee2-434c-967b-d082eb8c3b83", "9540ce25-a077-4a8a-8ba8-85442a5e65c9"]
+  }, {
+    "id": "3939090f-0e43-4503-bd62-8d7beff516b1",
+    "name": "001_TS028",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5b67f640-e77a-44b5-826d-75a79451a7eb", "5831c063-ba58-45a0-b243-13a10a05de9a", "0e797d4e-c675-4539-a763-1a010125065d"]
+  }, {
+    "id": "2974bc10-8124-4f75-bc2d-aad6b06ee678",
+    "name": "001_TS029",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["02c77125-2cc7-4fe9-9a09-af293799b499", "30db326d-3569-4f70-b2b0-cc2fb579a791", "6eaab5b9-805e-421c-89c8-a037caa99f51"]
+  }, {
+    "id": "74dcb491-ba2c-463e-befe-786264ea12ef",
+    "name": "001_TS027",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9883ffea-1b56-457e-8b2a-dac7fb77d832", "8feec1cd-4ec7-4a1e-a3aa-aa0afce3e282", "ecf9eb53-9633-4abb-a62f-6afe7addab03", "397644cd-28ae-4554-b867-801024c1ea0c", "7d684cd6-c89c-4efe-9554-254e67b8248a", "6d882ad1-0b08-4899-8a56-2e9977260f74", "e35d08ad-f215-4264-802a-680daf89642b", "3e16b356-15fb-47c6-a0d5-c521765fa501", "b86c8deb-5f6f-4a52-ad44-c692a6227bee", "c2cc6b41-ead3-4172-9d79-56b5c1234bf1", "e2e728c8-071b-42ae-8062-a094113285d3", "28fca175-c5ec-478a-ab40-27fe5745240a"]
+  }],
+  "urls": ["https://sagip-automation.vercel.app/"],
+  "plugins": []
+}

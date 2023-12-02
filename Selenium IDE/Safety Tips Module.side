@@ -1,0 +1,3656 @@
+{
+  "id": "ccec1527-3a2c-4895-a4b9-8b5f5f3d7f36",
+  "version": "2.0",
+  "name": "Safety Tips Module",
+  "url": "https://sagip-automation.vercel.app",
+  "tests": [{
+    "id": "1f43871a-f0b4-4aef-879e-a6796d9fc003",
+    "name": "1_TS048_TC002",
+    "commands": [{
+      "id": "a07d06ba-976e-4852-b449-9fec1beed866",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f4c2c66-9d78-447c-bae5-f01d0fd5bea7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d28fe38-fb4b-48f1-a30d-4b83fcdd1403",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b6f9fe6-a765-41f0-bd81-1448fa4623ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "82ab3b07-e034-4666-ba0b-3b539c0ec141",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "b598461e-5db8-4c71-a65a-3c94335cedf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2d942ee-4a97-4f54-ad2b-9527b5191ae3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca158cbf-4254-4151-95a8-725bdab9e7f7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cc7f2da-6dcb-4c57-97ef-514f8d054502",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20312695-73a9-4022-afad-ce61b58324c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa0b077f-fa49-4f23-997d-fbebfe63789b",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "ae662aec-3427-40a5-b123-62b2274ca201",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28e0fc58-7e2a-47bc-a735-8ccce1e33a6a",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "ff1ebac9-3c5a-4367-9077-c1941b1d67d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bf80493-045d-47cd-9eed-9c2098bf3542",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "796d3b68-29a1-4345-b347-2e4897ee0c31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6262fb84-4a54-4a74-ab84-a359bbaa395b",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "106c7784-29dc-4fe2-920c-23b0a34b8980",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afc13026-cf52-483a-937f-fe05f2abd0a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71666d99-a349-44ca-817b-063da5a6882a",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "bfcd47a8-57c1-40db-b573-eee3d6f9e126",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe19af74-d6af-4b09-bdac-ddc9d0c95f05",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //div[text()=\"published\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1648d1f3-0392-43d9-91d6-eba23db0dd91",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //div[text()=\"published\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "954b507a-aaef-4c00-82d1-ceb5d167fed3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c62b537c-6510-4ae8-940c-0f439d605e3a",
+    "name": "1_TS048_TC001",
+    "commands": [{
+      "id": "8027de05-6093-49a7-a596-395283ac3f94",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42b5e96e-04f7-4ee7-80e2-db51992acc7e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d79a30a9-6b57-41b9-8df5-ecc74c4e9c67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "267b008f-40a5-4614-884c-2ab9824ee0f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "aa2543ff-f066-4134-8002-3e3fba5be54b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "9698ca40-1fd8-4edb-b772-96195015dae0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "266fa196-04f0-4b82-9f39-c16fcfce93d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7393904-ff17-40ad-bcf3-568585341983",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "471564aa-d649-4f4e-829f-49e337392a37",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c911c909-2b26-43e9-a9aa-4d81817dd7f6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f3cb8a17-8694-4826-8c7a-ba54fa33e96d",
+    "name": "1_TS048_TC003",
+    "commands": [{
+      "id": "138d7734-3895-47bb-acfa-956ef1b0d382",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "104a1bf5-49d8-49b1-b156-3016121f3a5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb7e4ba6-8dbf-48e7-9307-544c4273b316",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb42b15d-f53f-482c-b9e6-538fc4379637",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "42079751-54b0-4863-b6e7-ae3506f89525",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "c4757932-70d3-4755-9f45-a03552996dd2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b9969b3-e0a3-4946-b96a-dddcf6cbf519",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8dfc6075-3157-47f6-9761-8fb4aafa23a7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69fb72d1-19af-4106-a4e3-61cfbcbeb343",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "789450f3-fe37-4234-ba02-e0589348dc1b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [
+        ["css=.py-2", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[5]/button", "xpath:idRelative"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Publish Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "641d72d2-6a20-4ab7-92e9-2585d8690f12",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Title is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75793530-8ee3-46da-a5c4-514179ee820f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Cover Image is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0e73303-7367-43f3-81e7-8d224824a168",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Content is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ffa829a-a577-4c67-93ad-737723084db7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ae9b253c-db92-4285-991c-0575bc08a440",
+    "name": "1_TS048_TC004",
+    "commands": [{
+      "id": "fc0ec933-c5b7-4c00-ac7a-5bd2e918444c",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "763d8a6b-ad1b-498e-ba47-2ab377cfbe7f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efc25f16-78b7-4c7b-bba3-9a22ef77927e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fd2df92-50d6-47e5-8d0f-b1b0024fe34f",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "86f13fba-1392-4cab-be75-3c54d2488470",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "8e191440-e369-4525-b490-75622e88b5bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2231773-8554-4abb-a755-26b90a2ad933",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce427c59-55bf-4bfc-bb02-812b4b36fac3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8690636f-aed1-4e12-8a7a-d861cf79da65",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a858f91f-9a6d-498f-8b78-4512eded8e55",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e07f73f8-7afe-4676-b1cd-a1d54fee0573",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "782a2816-df5c-42aa-99c0-9082449d1ffb",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de157f77-2f0a-4179-8866-0e719c659f66",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "e24b0113-607f-4bc8-9c36-bc3b5f8da873",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88806be5-f68d-427b-9e68-d77662c0ced3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7685b5e9-7a9e-4d99-b64d-976a30f5ac11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9567b3b3-f557-411f-91f8-a035077774d4",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\invalid_image.gif"
+    }, {
+      "id": "cf54b526-b9ae-40fb-8919-03b1b089713d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "970c8116-7ef3-47a7-8a3e-006bc79c9292",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfdabfeb-7925-448b-8dfb-96f892cc3b8d",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "3ac19c80-89b9-4bf9-ac36-686206d31e3a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eedde5b7-fee4-43ff-8d44-047dabc0da1f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "73c54d5d-1490-4da9-a78b-cb47b3478297",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fae7b62-815e-4b98-8f5d-329d532c8d67",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7548287d-23b1-46e4-ae27-86e1fb447859",
+    "name": "1_TS048_TC005",
+    "commands": [{
+      "id": "f102f192-53a1-48eb-bec6-90d75e69b86e",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33efedf7-bcb0-404c-9ac5-366e001ba0a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10f114c8-f677-4caa-8cd9-6039ce707ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a18ddf04-008e-4cad-8a72-06316a5a3378",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "f75a61cd-fc82-449b-981f-a4169125c48f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "652b5c30-026b-4dc5-b3cc-b1d51d8239a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d918d0d4-b7cf-4810-83d0-149e40f98bac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7fa7151-9fc2-4517-8f8b-250a2d0607d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "adb7934c-eaf2-41d9-b525-198b1e45212e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4654a09-dbf7-4c4d-88dd-46e069d211a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cac15f8-a506-4136-98fe-f892dbbb15a4",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "92c3e15c-f729-4de2-8fb2-3de316896125",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d33a15f-16a6-4eb2-be73-ae387b402a62",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "07e9d458-1e00-411d-9162-37b77a78b467",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31930dde-cc5a-4b8b-bf21-8a0a74d4b6fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3ce062-447e-48b1-85e2-160c3dd35c9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32414df1-b5a1-44cd-9f81-a26d2b17760f",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\large_image.jpg"
+    }, {
+      "id": "94d78bb0-5fde-4e15-8792-930207479de5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59a9bde4-f59d-4683-95f7-873a4827678e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9450fe1a-6071-45c5-8d6f-5a9144eba0cf",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "17336572-537e-4a08-9598-55feca335262",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91159b59-313b-4273-bc8f-71187780f61d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "a0dae048-4227-4be1-9d39-0347e37a2954",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "355a86d3-e95d-46c4-aeab-e2db366ecf44",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ac8e18fa-68ca-4cf9-afd9-30fe30477154",
+    "name": "1_TS048_TC006",
+    "commands": [{
+      "id": "b079ef55-4220-4ec0-963a-ad22644a73d7",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "baa02b4f-e285-4296-ae8f-194894f643d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e069226b-ae55-45a4-a454-039ff1f84b23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "729efebc-bd11-4e38-b398-1c2c273edd58",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "601f3fcb-ce9b-49f3-ae51-9f4f5e9ecb5c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "210c9c6a-2493-4db0-9255-7fdbd1f136f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9612533-8b45-4263-b5bd-c85af04ee689",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "711fbd2b-6ef2-4be3-ad4a-91e82772b62f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "162ae8c1-7ae6-4257-97a7-793f5c9d03d3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "848c8a43-a7c5-4b6d-b6f5-f9ef88400af2",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21fbe838-8138-4a0d-b6fc-83e70df08812",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "e07bcf73-ca67-4e9d-90ed-d8a6fb53adaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec382c06-7023-4c31-b4fa-5ca6ef7b4144",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "91745026-9db5-4541-811f-ee5a434f91cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05fab0d3-dede-4823-85f5-90b9a16de493",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee4d0d2f-f4fe-437a-8ff2-91d555ba1125",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b762c134-47dc-4f4c-8935-1ca14304e994",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "bc6b661a-922c-41e8-bb92-7f463972bcd9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a175cfb-bcad-4525-9234-ffe9c06ecc22",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eabd8789-1da7-415c-af24-916dd2ae1898",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "245b4407-e03c-4f39-9c71-87fea52194d3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Save as Draft']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48318026-c745-43d2-b8f3-38a1b6228fd6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //div[text()=\"draft\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "b1309f4f-0357-4b5b-9ce4-9369947b5160",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //div[text()=\"draft\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed1e7b41-541b-4a6d-9ebd-762f438e4fa7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3eea04fb-5182-4a56-aac7-253fe5fe9912",
+    "name": "1_TS048_TC007",
+    "commands": [{
+      "id": "68a711d7-50f6-464f-a4b3-6958e36fe9b7",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b80d7f48-7904-4e6f-a3f4-85a7070f639c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26967132-99fc-4c46-ad22-c8bf892095b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c708b2ab-01de-4624-a9b6-18acc7838ce5",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "8759d41f-f7f2-4384-96c6-7e22ceb15aa5",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "d1cc4fcb-b451-4532-afb4-f32a62fdace3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41d0492c-8f7a-41cd-823e-a4420f08c049",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6990d2bd-235f-495c-8411-45b3dd6d3f71",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create Article",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51438c60-241b-4925-b53a-250a62ff296e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[text()=\"Write Article\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "77882990-77ab-47e8-8a2c-c2385d819fc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a32aa2be-85d1-47fd-ad5d-16b43b070273",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "06c9a813-683e-4e88-9fe0-337a5bd15b1c",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5da86306-18f8-4878-a96f-ec949c2269d7",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "eee20dba-755c-4d9f-8754-5d955a555c20",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72519e82-fd62-4001-bf4b-f403a44b9a25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(4)",
+      "targets": [
+        ["css=.form-group:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]", "xpath:idRelative"],
+        ["xpath=//div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4ca5840-d84d-496d-9800-752b8bab8f1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a16312bf-ddb7-4f05-8481-3009e5abd094",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "919e12d0-d9d0-4c66-b8bd-f6ff9f26188d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43e42559-0e39-4574-ba07-20354f967b36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db6b55c2-bb6b-40d6-8d8c-5e245af6083f",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "6400c470-94f6-4fa0-9ebf-97841486dcc5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "816c9566-f893-432c-97f5-b62a14753689",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //div[text()=\"published\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "9f3662ba-e0d4-4ed9-a121-ec5c79fa0035",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //div[text()=\"published\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fbce762-458a-4c05-a8e7-3f004216c550",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4dafc496-ea55-4385-853c-272c2f27f8ee",
+    "name": "1_TS049_TC001",
+    "commands": [{
+      "id": "e7619c6d-e27e-4afb-ae3d-bf5e98ec993b",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d347df2c-7378-45ec-abe4-f471ccdaf8c5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7535ee3-13de-4381-93e0-6c878424ec2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "393bad62-b2fc-4134-a3b9-8c8679cb240c",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "75ef685f-deb3-4f7b-b4aa-3fcc06dcd9f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "00054cce-cace-44ad-85a1-8d667bf15499",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "614b3153-a60d-46e8-89fc-76338f5edb26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4d1dc77-da7c-48f9-a764-e3b77fae9f88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border-b:nth-child(1) .ant-dropdown-trigger",
+      "targets": [
+        ["css=.border-b:nth-child(1) .ant-dropdown-trigger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "51a0d34d-1011-4f9f-b5af-6267b1a082d8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //ul[@role='menu']/li//span[text()=\"Delete\"]/..",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bcd7b16-c923-4ffb-8c1e-09341afbd4d5",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to delete this?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fc5acca-402c-4ab2-b84a-0282ff62605e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a8bb35c3-8528-4bd4-8cbf-7f98453e1832",
+    "name": "1_TS049_TC002",
+    "commands": [{
+      "id": "7fbbd054-157b-45a7-a992-9ab77e2b3fd0",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08204493-4785-4225-8dc7-d6c4dfed0a5a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fefef9f2-64f7-467a-b5a5-35e113b1a744",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c0669d3-0349-4a2e-99a2-1a07b53e7339",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "f3e952b6-399d-400d-af76-3bcb9e011262",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "41f1a858-5f89-4cf2-bf1f-8c48efc8fe17",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a1ed7b9-b077-47b6-90d4-a8e8fbd746e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2685083f-c5fd-4135-99c0-73f0d260f8bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border-b:nth-child(1) .ant-dropdown-trigger",
+      "targets": [
+        ["css=.border-b:nth-child(1) .ant-dropdown-trigger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "4695d514-64a8-4cf2-879b-24d639fa1956",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c04141fa-1257-44bf-a3eb-28107a6ec589",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //ul[@role='menu']/li//span[text()=\"Delete\"]/..",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9883d82-9745-47f6-b6fb-2eb8f00d9ff6",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to delete this?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a850d59-637f-41a3-aae5-19cd36626e59",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2377e418-3115-42ff-aac0-708730b2eb21",
+    "name": "1_TS049_TC003",
+    "commands": [{
+      "id": "320e5e8b-82f2-48ca-9a49-21525e985a58",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc4e263e-b42d-466f-9af5-7113534ef341",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a1d4011-d2ba-4f86-956e-2c4c419cb666",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad90b99-1a69-4bd1-befe-93a724de8bf4",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "292e8631-176d-4ace-bd67-0d3537f92a3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "896c0d3c-6861-4ddc-8a13-20944eb1a238",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f83baab0-6e9e-46bb-894f-f0f3184597a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad8a1b9-e5b2-4f9b-ad42-bc53002082a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border-b:nth-child(1) .ant-dropdown-trigger",
+      "targets": [
+        ["css=.border-b:nth-child(1) .ant-dropdown-trigger", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a81150d-b00a-4ca1-8b95-d5196a4a3591",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f74b0f55-4d38-4da2-92b6-d3d5d4f1f6e5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //ul[@role='menu']/li//span[text()=\"Delete\"]/..",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f0e4e38-5e6a-47c0-8b0f-fb2bd77d60c8",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure you want to delete this?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01233c51-a3b6-42dc-a611-af6b6b9b1769",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc6fbe91-a73f-4edf-90b3-b843341c407f",
+    "name": "1_TS050_TC001",
+    "commands": [{
+      "id": "0a55778f-119c-49c0-ae22-38868fce1f4c",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f46155e-1127-44a8-90fd-9ee9f57905de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b761a881-5d81-4d05-9417-ccf47d9dd379",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e20047fd-ef15-48df-a335-381d66b1ed03",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "114a239d-05ec-455e-959c-d4346c44bf9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "f7e66e21-32ee-4689-bd81-4dce53050cce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "718257a2-ba1f-4038-b313-68f380663688",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62805ef7-7f59-447f-85a0-5235f7c1fd5a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "697722fc-5759-4884-a458-d770392138ba",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //div//span[text() = \"You are in preview mode.\" ]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "dfdf5d4d-a2d8-432f-9d18-bbf65bce77be",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //div//span[text() = \"You are in preview mode.\" ]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "31034eac-3281-4342-b428-56e8642c4fff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b589cabb-874d-48ce-88a7-8b05952dd829",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "be535005-ac5a-4949-9e13-2a1bd7235c83",
+    "name": "1_TS050_TC002",
+    "commands": [{
+      "id": "f136bbdc-7e64-40af-a110-e7ede5e833e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14094888-ebf7-468c-83a2-7a6423218010",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8056c45-2440-46c9-b74a-489683f7a0d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f26fee7-82d9-41cf-8dab-c8ca73748ac8",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "1d9e6889-8d74-4570-bd0d-a9953d683a25",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "94e423cb-10dc-44ec-b04d-45a2d5ee670d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27933a87-bad9-486b-b201-6313c93c4977",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "820d1568-5a9e-46e3-aaf5-cbe9e234d31d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e42263-5e62-40cd-aa1d-8f628067a82d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //div//span[text() = \"You are in preview mode.\" ]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "be28b1dd-e25c-432f-87b2-0d9648cada08",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //div//span[text() = \"You are in preview mode.\" ]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d523009f-8b47-4d49-bdf0-029360efce3d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a50cf49d-71be-4a0e-93cb-f687e05c1798",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "302e9656-e616-43b2-bc62-d3ed8c8c15b4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "70256b8e-fb38-4aeb-aa75-e8a37907f9b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3e95e0e7-dec0-479b-a129-0a7ef4322915",
+    "name": "1_TS050_TC003",
+    "commands": [{
+      "id": "37327fab-e17a-4adc-ad87-6cc9f53aeb80",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "548d66a8-c265-4180-b0be-beeb25b3a0bd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00161db1-9006-4f40-9997-d1bcfa2c1a39",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a428f843-af13-4e03-9ca7-ee82795bf694",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "83d34126-fa09-4533-970f-c4a64c743932",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "f1272bee-b731-4ca7-812c-ba2faf1cd75b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeb89159-2384-4726-a283-e7b7cab07512",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0158461-6f95-43ac-98af-69b03ad2b042",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d0f9a8-9caa-48b9-923b-6bbd2a8e4c36",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f69264c4-d378-4b50-b5b1-96043db3e180",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "a25205e4-c782-4476-a53c-c918c480ced4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c6264bb9-f708-4f42-8401-fdbd216f736f",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a6af4fc-01fb-42e0-8efa-04712f6cc876",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Beat the heat "
+    }, {
+      "id": "fd3f7b22-35b0-4928-adaa-1078f37de1a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c4090d8-8a5b-49c1-979e-7582bafcf925",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "c15411ff-44b1-40b6-a73b-1ef7f8530d54",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b3590c1-808d-45f5-8abb-c51c56774a5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d30e3f7d-7724-4622-89b4-61d812023d7b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath= //input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "4e658788-7db3-449c-8f72-c5ba56684239",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13d87049-8ab7-4eb7-9f67-5e69f4407a38",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d2c1dce-640c-426a-a034-1e3da89a0aac",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Wear comfortable clothes</p>"
+    }, {
+      "id": "dca7928d-5baf-4ef6-821a-99c4a1362c01",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath= //button[(@disabled) and text()='Publish Article']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "cc1eba54-e480-4ae5-8569-06e97fd87a39",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath= //button[(@disabled) and text()='Save as Draft']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c91ec0a1-932b-479c-947f-558ba314ca10",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e4083774-ea00-456c-a060-c3d62d7aafb5",
+    "name": "1_TS050_TC004",
+    "commands": [{
+      "id": "987c093c-03db-49bb-aec1-76ebc3b9c5f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79a513eb-a569-43d2-b8e6-5ffae9d34676",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "646c2a09-24ca-40a3-92aa-28267e63202e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab9c8c47-53ef-46b8-99b3-602c307c90ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "9370cb2b-2914-4606-8da2-1ffcbfa2f0db",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "11dedf4e-48da-4c75-8da0-4bc2dbb8048f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "431eebf5-9b5d-4a60-a05c-265749eab4ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "493e2800-3b7a-48f0-b155-111d46c83017",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a121848-9520-47c6-9dee-3942bc545aa7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c95f00f3-dd74-40b8-bd7d-3e0b4f429574",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "78cbc896-3857-4841-80ed-a38c04931fea",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "a4d5a822-72ce-40bb-aefe-270f41d2d4cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e669701-7ccb-429c-baab-d0411ae645f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16b05e13-eb4b-4f61-8a6b-749ef952c0a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c4bec6d-b818-408a-94d6-01f8e50512f8",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "f9736e12-77b7-4672-a23d-2eb414577480",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d27dc60-a9e0-436c-b139-baa751ddcab7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "653efda5-d132-4db3-9a7a-67046bbf83a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0267e006-b639-42ef-876c-b71a944a27f6",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0737d4b-6469-42a8-812a-8fd0205da081",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Save as Draft']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58457e5f-d2ab-4e35-bd80-e3cb7254652f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Title is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe1121ef-1032-4a45-bdf5-6a69eba214c0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Cover Image is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "947f170c-dade-44bb-83e2-df6535086cd1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Content is required']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f64dc320-e390-4dd0-ba5a-ce11fc3355d7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "38e2a055-f64d-46f6-80f0-4bdc6f65af3f",
+    "name": "1_TS050_TC005",
+    "commands": [{
+      "id": "25695edd-227a-4408-89ac-91b76bb25574",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20fe7980-e2a2-4cb2-a349-c6a1d47555e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dec88baa-90a0-456b-b5a3-9dd5beb344eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "936c4561-ab7d-4c20-bfea-58396174c9fd",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "c337d6c2-ac22-464d-a4c4-530dac0e5eac",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "532c6694-da61-418d-aae7-76e40600b803",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2635981-4215-4947-bb27-a0b7f6c4a95b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f45d3a10-2d16-4a72-979e-ab2ae311a62d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0db7593a-b51d-4eba-ae2b-df21d8de95ef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f7435fb-7998-455d-a612-69cb31f180ab",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c18e65df-bceb-4ed3-a4cc-270464ca1f09",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "95532a11-8ba6-4783-99c5-8ecb5e9a2ea5",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be7008f7-bdf5-436f-a3b5-6077df5385f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "c587cb1a-c561-4612-b5dd-9a5556518e64",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fb3c306-6a74-4847-8f09-5693f3263d32",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "5e9a466c-aab7-4b80-9e6b-114e19b91a42",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073acdf8-b191-47cc-85e6-791e0a81915b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65347106-2c18-462c-86d5-ad749c19b403",
+      "comment": "",
+      "command": "type",
+      "target": "xpath= //input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\invalid_image.gif"
+    }, {
+      "id": "24d5cee0-d319-435b-ae74-587f43941dd3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea987fd8-2519-488c-a086-dba421b41357",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af9adbb0-8713-4a6f-b0f1-611a92dea9fc",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "5147c2df-160f-4978-a2cc-e2dd7bf4eda0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Save as Draft']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "382c3018-29b0-4a1c-af43-6666562d577c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "5b62f07b-68d9-4f42-acdf-625d5864ca87",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "825e160e-658c-4d0a-aff7-c283f4a8c4b6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "77b78f1a-eea4-4abc-b14f-0fd76a27ec53",
+    "name": "1_TS050_TC006",
+    "commands": [{
+      "id": "4e716d2b-7a4b-496c-b0a1-7ff72ebc3fe3",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f9ef34f-5818-4242-ae81-3b27d7ce01a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12945c9a-2eb6-4460-b2bc-8bb8d382a581",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be061f7f-9c10-4e4e-96f8-206f7598ab4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "03a29a5e-5e1f-4cba-8159-c124fca32c2c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "65838298-5143-47bf-a1a4-5b08f0484db5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2b8609e-10fa-4525-b66e-9705711f60bc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ce99fbb-1cbd-42be-8900-ecf6973bcd4d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa7bc7d3-f02a-4ff3-b620-c26f2a8ff85b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a44aff13-a50f-4c63-a3b0-dc9d7c4a49cc",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1be62508-69bc-4456-9fcd-316ddc5b40d9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7f33970f-1101-4a8b-a73f-84793b3d3ea7",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a12dc1b-9211-4323-b903-22133d6f233a",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Extreme heat safety"
+    }, {
+      "id": "8ee94b6c-f7f3-4c8d-9225-d74c1732fd0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bf60352-4ae0-4c25-8594-d700c880d6a5",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "7133385c-3258-416c-9212-07fb082f6927",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4bd06cd3-4e4f-47a4-a8c8-84f260a6e17e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3981191c-8560-4e14-94ae-34de6fac2141",
+      "comment": "",
+      "command": "type",
+      "target": "xpath= //input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\large_image.jpg"
+    }, {
+      "id": "d2889ba6-5918-46bc-ae52-290ac7eb9a92",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea3e492e-5e2c-4db4-9c06-66c8a71bb4fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad60ee43-3c5e-49d5-ab6a-c63ead9e1731",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Drink your water</p>"
+    }, {
+      "id": "844505eb-cc31-4e86-b8ff-2547b132cebf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Save as Draft']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "663824bf-8a7d-4b65-8099-ca82530e10cb",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "cf7753a9-e4fe-49c6-bcf7-fdad9dcce5ea",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //span[text()='Only PNG, JPEG, and JPG files are allowed']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59fe0608-4998-4e49-8541-265729605a3e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b9ed6e8f-d6fd-4668-8d8f-0da5d22889ee",
+    "name": "1_TS050_TC007",
+    "commands": [{
+      "id": "20534d53-8015-4f17-8b5f-4ff68bf97a55",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "34f45590-d9ed-4056-8467-7a865fef8573",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf625a85-9b4c-41ef-bae3-5e3c56d0ac90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aeb841e7-af4e-48c8-b9dd-8b57d18116eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "a7057221-8d9c-4fde-837c-8d00cd7dcc1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "b15930ca-0ab4-4790-85cf-7a42fb10d341",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f02052e2-bc0a-48e1-82ad-50ea88335c3d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba42f9a9-4b6c-4e65-af8d-790f8f9b571b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b4af317-975a-495c-8e36-86edc514563f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1b46bf2-f081-43b1-93fa-045ca2907886",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "146879c7-c24c-4519-a45d-6ee3ff3959b5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "169b5803-9e2b-498e-9dde-beb5f19700ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0d2aeea-ef5d-49ba-a9e4-291d38fbbe29",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Beat the heat "
+    }, {
+      "id": "b053abaa-839c-4c4c-ba30-eae09a70802f",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "207c73a6-88b1-466b-be14-9f8e53895b63",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "fe8c929d-2520-4606-b4aa-40944e399c8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87d3a15e-0900-4a1a-8ce9-b005221c4ce1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9073d6bc-2fa2-407d-85a1-7e2c2b848741",
+      "comment": "",
+      "command": "type",
+      "target": "xpath= //input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "25742e8a-7645-4277-be04-b9aff8df42d3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b7830ce-f5dc-4921-8188-59cfd4c7a2a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7741636f-13c0-40ad-9d7f-c213f7d4a7e8",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Wear comfortable clothes</p>"
+    }, {
+      "id": "a7a6a98c-3826-47c9-b7ae-a2bbb2d6ceb3",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath= //button[(@disabled) and text()='Save as Draft']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "113d17bd-9e9d-466b-ba63-ad21e15bbb7c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Save as Draft']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32b2fc3-8c2c-414f-bd40-f80962105411",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4d4797b1-28ff-4e53-be70-2e5d4d5caed7",
+    "name": "1_TS050_TC008",
+    "commands": [{
+      "id": "0591e538-7255-46b5-a6d5-c28c341972f4",
+      "comment": "",
+      "command": "open",
+      "target": "https://sagip-automation.vercel.app",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab7d8d45-b3f7-4abc-a813-fb7880264313",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "694x745",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a10a857-bbfd-43bb-a1fc-309b003784a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c87b33-aa6b-4d58-a07a-1cac16c16f0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifier",
+      "targets": [
+        ["id=identifier", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifier", "css:finder"],
+        ["xpath=//input[@id='identifier']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "employee@sagip.live"
+    }, {
+      "id": "090099bb-ec4d-4ad9-ac5f-92fd9ec0c6c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sagip.00"
+    }, {
+      "id": "9ecc4cc3-405e-4eb9-bcdf-1cbe9347f3f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/button", "xpath:idRelative"],
+        ["xpath=//body/div[2]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c642d46-1ae0-4d7e-90d6-08fcae0ff975",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Articles",
+      "targets": [
+        ["linkText=Articles", "linkText"],
+        ["css=li:nth-child(7) > .relative", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/aside/nav/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Articles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68f92ccf-5cc7-4ccb-859e-34e43bbf1f1e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //table//a[1]",
+      "targets": [
+        ["linkText=Create Article", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Create Article')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[3]/section/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/admin/manage-articles/create')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create Article')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e88b84c8-79c6-40bf-82a1-2d568cffeb0b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //div//button[text()=\"Edit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2869823-064e-4095-afbd-b25f3538990d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "8b37a891-66bf-4556-8e3d-e40b52ab7920",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath= //h1[text()=\"Edit Article\"]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "97841717-42a0-4da5-be04-49ae5eccf083",
+      "comment": "",
+      "command": "click",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fc1b342-e7b7-403f-9db2-b5315fa08003",
+      "comment": "",
+      "command": "type",
+      "target": "id=articleTitle",
+      "targets": [
+        ["id=articleTitle", "id"],
+        ["name=title", "name"],
+        ["css=#articleTitle", "css:finder"],
+        ["xpath=//input[@id='articleTitle']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Beat the heat "
+    }, {
+      "id": "e84386d8-98ed-4f0d-830f-676de4d2fbff",
+      "comment": "",
+      "command": "click",
+      "target": "id=category",
+      "targets": [
+        ["id=category", "id"],
+        ["name=category", "name"],
+        ["css=#category", "css:finder"],
+        ["xpath=//select[@id='category']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55795c9e-e405-4a29-8c62-6d6764fa7330",
+      "comment": "",
+      "command": "select",
+      "target": "id=category",
+      "targets": [],
+      "value": "label=Heat Safety"
+    }, {
+      "id": "e87a98b8-37ea-4eea-a7a7-66a21de948b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Replace']",
+      "targets": [
+        ["css=.dropzone", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[3]/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "562d5e9b-a824-4cdd-98eb-a9a4c8552806",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropzone",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87be814b-2fe2-4372-9f80-e1e8d216795f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath= //input[@type='file']",
+      "targets": [],
+      "value": "C:\\\\Users\\\\Darwin\\\\Desktop\\\\SAGIP Automation Testing\\\\img\\\\valid_image.jpg"
+    }, {
+      "id": "f7d1fa05-e14c-4b36-b450-63b0b69936de",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41187586-be05-42f8-8807-1fd37b0ba524",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b0f57c4-2f7b-4c1e-8a7b-05ce66d812ec",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.ProseMirror",
+      "targets": [
+        ["css=.ProseMirror", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div/form/div[4]/div/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "<p>Wear comfortable clothes</p>"
+    }, {
+      "id": "b0985cbc-d4f6-4fe9-9bf5-1c4937da14bc",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath= //button[(@disabled) and text()='Publish Article']",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "e839d2e8-b3a3-4f53-a92e-a9ed9a969b3b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath= //button[text()='Publish Article']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "622c5438-0226-4fe1-842f-39efb6549d80",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/button[@class='flex items-center p-2 rounded hover:bg-gray-200']",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7b0de15f-b771-47a5-ae10-38ec9fb32d6a",
+    "name": "TS048",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c62b537c-6510-4ae8-940c-0f439d605e3a", "1f43871a-f0b4-4aef-879e-a6796d9fc003", "f3cb8a17-8694-4826-8c7a-ba54fa33e96d", "ae9b253c-db92-4285-991c-0575bc08a440", "7548287d-23b1-46e4-ae27-86e1fb447859", "ac8e18fa-68ca-4cf9-afd9-30fe30477154", "3eea04fb-5182-4a56-aac7-253fe5fe9912"]
+  }, {
+    "id": "8737312c-7d9a-4581-b191-07a9df57d4f0",
+    "name": "TS049",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://sagip-automation.vercel.app/"],
+  "plugins": []
+}
